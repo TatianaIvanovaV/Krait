@@ -1,5 +1,37 @@
-.body {
+body {
 font-family: 'Dosis', sans-serif;
 
+background: #ffffff;
+color: #222222;
 /*font-family: 'Roboto', sans-serif;*/
 }
+ul, li {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+img {
+width: 100%;
+}
+
+/* start header styles */
+.head {
+
+ background: linear-gradient(to right,#fd712c, #f31e7a);
+ color: #ffffff;
+}
+.fa-check-circle {
+ color: #ffffff; 
+}
+/* end header styles */
+
+/* start features styles */
+.features {
+    border-bottom: 1px solid #eeeeee;
+}
+.icon {
+    color: #f31f79;
+    border: 1px solid #eeeeee;
+    border-radius: 50%;
+}
+/* end features styles */
