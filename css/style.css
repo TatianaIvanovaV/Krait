@@ -23,6 +23,10 @@ width: 100%;
 .fa-check-circle {
  color: #ffffff; 
 }
+.menu__item a {
+    color:  #ffffff; 
+
+}
 /* end header styles */
 
 /* start features styles */
@@ -35,3 +39,33 @@ width: 100%;
     border-radius: 50%;
 }
 /* end features styles */
+
+/* start dn-leave styles*/
+/* end dn-leave styles*/
+
+/* start screen-shots styles*/
+.screen-shots {
+background: #f7fafc top;
+}
+/* end screen-shots styles*/
+
+/* start pricing styles*/
+.pricing {
+
+}
+/* end pricing styles*/
+
+/* start video styles*/
+/* end video styles*/
+
+/* start reviews styles*/
+/* end reviews styles*/
+
+/* start download styles*/
+/* end download styles*/
+
+/* start footer styles*/
+/* end footer styles*/
+.BG--color {
+    
+}
