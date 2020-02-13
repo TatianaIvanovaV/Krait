@@ -1,57 +1,147 @@
-body {
-font-family: 'Dosis', sans-serif;
-
-background: #ffffff;
-color: #222222;
-/*font-family: 'Roboto', sans-serif;*/
+html {
+    box-sizing: border-box;
+  }
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
 }
-ul, li {
-    display: block;
-    margin: 0;
-    padding: 0;
+body {
+  font-family: "Dosis", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  background: #ffffff;
+  color: #222222;
+}
+ul,
+li {
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 img {
-width: 100%;
+  width: 100%;
 }
-
+a:hover {
+    text-decoration: none;
+}
 /* start header styles */
-.head {
-
- background: linear-gradient(to right,#fd712c, #f31e7a);
- color: #ffffff;
+.header {
+    background: linear-gradient(to right, #fd712c, #f31e7a);
+  color: #ffffff;
+ 
 }
-.fa-check-circle {
- color: #ffffff; 
+.header::after {
+    content: "";
+    display: block;
+    position: relative;
+    z-index: 1;
+    top: -145px;
+    left: 0;
+    background-image: url(./imgs/iphones-header.png) no-repeat;
+    
+}
+.main-header {
+  padding-top: 30px;
+  padding-bottom: 150px;
+}
+.logo {
+    
+}
+.logo__pic {
+  width: 50px;
+  height: 40px;
+}
+.logo__title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #ffffff;
+  
+}
+.menu {
+ font-family: "Roboto";
+font-size: 16px;
+font-weight: 400;
+margin-top: 10px;
+margin-right: -10px;
+}
+.menu__item {
+    margin-left: 50px;
 }
 .menu__item a {
-    color:  #ffffff; 
+  color: #ffffff;
+}
+.button {
+    background-color: #ffffff;
+    padding: 7px 15px;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    color: #222;
+    border: 0;
+    border-radius: 20px;
+    
+}
+.button:hover {
+    box-shadow: 0 0 0 5px #e25e2e;
+}
+.title {
 
+    max-width: 488px;
+}
+.title__App {
+    font-weight: 600;
+    font-size: 3.2em;
+    margin-bottom: 25px;
+}
+.title__benefits {
+    margin-bottom: 40px;
+}
+.title__benefits li i{
+margin-right: 20px;
+}
+.explording-btn {
+    margin-bottom: 215px;
 }
 /* end header styles */
 
 /* start features styles */
 .features {
-    border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  padding-top: 120px;
 }
-.icon {
-    color: #f31f79;
-    border: 1px solid #eeeeee;
-    border-radius: 50%;
+.offer {
+    display: flex;
+    justify-content: flex-start;
+}
+.offer__icon {
+    display: flex;
+    
+    width: 75px;
+    margin-right: 25px;
+  color: #f31f79;
+  border: 1px solid #eeeeee;
+  border-radius: 50%;
+}
+.offer__titie {
+    width: 260px;
 }
 /* end features styles */
 
 /* start dn-leave styles*/
+.reasons__item i {
+  color: #000;
+}
 /* end dn-leave styles*/
 
 /* start screen-shots styles*/
 .screen-shots {
-background: #f7fafc top;
+  background: #f7fafc top;
 }
 /* end screen-shots styles*/
 
 /* start pricing styles*/
 .pricing {
-
 }
 /* end pricing styles*/
 
@@ -65,7 +155,18 @@ background: #f7fafc top;
 /* end download styles*/
 
 /* start footer styles*/
+.footer {
+  background-color: #000;
+  color: #ffffff;
+}
+.social-icons__item p {
+  color: #ffffff;
+}
+
+.copyright {
+  font-family: "Roboto", sans-serif;
+}
+
 /* end footer styles*/
 .BG--color {
-    
 }

@@ -3,26 +3,32 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Giant App landing template</title>
+        <title>Giant App landing templates</title>
         <!--<link rel="stylesheet" href="./css/reset.css">--> 
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <meta name="viewport" content="width=device-width initial-scale=1 shrink-to-fit=no">
+        
         <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600,700|Roboto:300,400,500,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
         <script src="https://kit.fontawesome.com/7c02182408.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header class="header">
-            <div class="main-header">
-                <div class="conteiner">
+            <section class="main-header">
+                <div class="container">
                     <div class="row">
                         <div class="col-lg-2">
-                            <img src="./imgs/logo.png" alt="logo">
-                            <span class="logo">Giant</span> 
+                            <div class="logo">
+                                <a href="/">
+                                    <img src="./imgs/logo.png" alt="logo" class="logo__pic">
+                                    <span class="logo__title">Giant</span>
+                                </a> 
+                            </div>
                         </div>
                         <div class="col-lg-8">
                             <nav>
-                                <ul class="menu d-flex justify-content-between">
+                                <ul class="menu d-flex justify-content-end">
                                     <li class="menu__item"><a href="#">Home</a></li>
                                     <li class="menu__item"><a href="#">Features</a></li>
                                     <li class="menu__item"><a href="#">Pricing</a></li>
@@ -34,83 +40,85 @@
                         </div>
                     </div>    
                 </div>
-            </div>
-            <div class="main-title">
+            </section>
+            <section class="main-title">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-5">
-                            <h1>A Powerful & Unique App Landing Template</h1>
+                        <div class="title">
+                            <h1 class="title__App">A Powerful & Unique App Landing Template</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <ul>
+                            <ul class="title__benefits">
                                 <li><i class="fas fa-check-circle"></i>Unlimited colors: banner with images, slider or video</li>
                                 <li><i class="fas fa-check-circle"></i>Fully Responsive and powered by HTML5 and CSS3</li>
                                 <li><i class="fas fa-check-circle"></i>Very easy to customize : set up in minutes</li>
                             </ul>
                             <button class="explording-btn button">Start Exploring Us</button>
-                        </div>
-                        <div class="col-lg">
-                            <img src="./imgs/iphones-header.png" alt="" class="BG-iphones">
-                        </div>   
+                        </div> 
                     </div>
                 </div>
-            </div>
+            </section>
+            <!--<div class="BG-iphones">
+                <img src="./imgs/iphones-header.png" alt="" class="BG-iphones__img">
+            </div> -->
         </header>
         
         <section class="features">
             <div class="container">
                 <div class="row">
-                    <div class="col-ig-4">
-                        <div class="features__item">
-                            <div class="icon">
+                    <div class="col-lg-4">
+                        <div class="offer">
+                            <div class="offer__icon">
                                 <i class="fas fa-tags"></i>
                             </div>
                             <h4>Sell any product online</h4>
                             <p>Over 92% of computers are infected with Adware and spyware. Such software is</p>
                         </div>
                     </div>
-                    <div class="col-ig-4">
-                        <div class="features__item">
-                            <div class="icon">
+                    <div class="col-lg-4">
+                        <div class="offer">
+                            <div class="offer__icon">
                                 <i class="fas fa-cog"></i>
                             </div>
                             <h4>Very easy to customize</h4>
                             <p>Many of us are so used to working on a computer desktop that when it comes</p>
                         </div>  
                     </div>
-                    <div class="col-ig-4">
-                        <div class="features__item">
-                            <div class="icon">
+                    <div class="col-lg-4">
+                        <div class="offer">
+                            <div class="offer__icon">
                                 <i class="fas fa-paint-brush"></i>
                             </div>
                             <h4>Unlimited colors</h4>
                             <p>Audio player software is used to play back sound recordings in one of the many</p>
                         </div>  
                     </div>
-                    <div class="col-ig-4">
-                        <div class="features__item">
-                            <div class="icon">
+                    <div class="col-lg-4">
+                        <div class="offer">
+                            <div class="offer__icon">
                                 <i class="fas fa-fire-extinguisher"></i>
                             </div>
                             <h4>Responsive, HTML5, CSS3</h4>
                             <p>Computers have become ubiquitous in almost every facet of our lives. At work,</p>
                         </div>  
                     </div>
-                    <div class="col-ig-4">
-                        <div class="features__item">
-                            <div class="icon">
+                    <div class="col-lg-4">
+                        <div class="offer">
+                            <div class="offer__icon">
                                 <i class="fas fa-file-alt"></i>
                             </div>
                             <h4>Designed to convert</h4>
                             <p>If you are looking for a new way to promote your business that won't cost</p>
                         </div>  
                     </div>
-                    <div class="col-ig-4">
-                        <div class="features__item">
-                            <div class="icon">
+                    <div class="col-lg-4">
+                        <div class="offer">
+                            <div class="offer__icon">
                                 <i class="far fa-life-ring"></i>
                             </div>
-                            <h4>With no boundaries</h4>
-                            <p>Now, if you are interested in being the best player, getting really good money and</p>
+                            <div class="offer__titie">
+                                <h4>With no boundaries</h4>
+                                <p>Now, if you are interested in being the best player, getting really good money and</p>
+                            </div>
                         </div>  
                     </div>
                 </div>
@@ -124,14 +132,24 @@
                         <img src="./imgs/iphone.png" alt="mobile app">
                     </div>
                     <div class="col-lg-6">
-                        <h3>We don’t leave you stranded</h3>
-                        <p>Everyone’s reasons for learning user interface design are different. If you're already a developer, or a PM, or a UX designer, who develop this totally separate skill?</p>
-                        <p>Everyone’s reasons for learning user interface design are different. If you're already a developer, or a PM,or a UX designer, who develop this totally separate skill? If you're already a developer, or a PM, or a UX designer.</p>
-                        <ul>
-                            <li>Unlimited colors: banner with images, slider or video</li>
-                            <li>Fully Responsive and powered by HTML5 and CSS3</li>
-                            <li>Very easy to customize : set up in minutes</li>
-                        </ul>
+                        <div class="dleave-title"></div>
+                            <h3>We don’t leave you stranded</h3>
+                            <p>Everyone’s reasons for learning user interface design are different. If you're already a developer, or a PM, or a UX designer, who develop this totally separate skill?</p>
+                        </div>
+                        <div class="dleave-content">
+                            <p>Everyone’s reasons for learning user interface design are different. If you're already a developer, or a PM,or a UX designer, who develop this totally separate skill? If you're already a developer, or a PM, or a UX designer.</p>
+                            <ul class="reasons">
+                                <li class="reasons__item">
+                                    <i class="fas fa-check-circle"></i>Unlimited colors: banner with images, slider or video
+                                </li>
+                                <li class="reasons__item">
+                                    <i class="fas fa-check-circle"></i>Fully Responsive and powered by HTML5 and CSS3
+                                </li>
+                                <li class="reasons__item">
+                                    <i class="fas fa-check-circle"></i>Very easy to customize : set up in minutes
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>  
@@ -139,7 +157,7 @@
 
         <section class="screen-shots">
             <div class="container">
-                <div class="row text-center">
+                <div class="row">
                     <h3>Take a look at our screenshots</h3>
                     <p>Everyone’s reasons for learning user interface design are different. If you're already a developer, or a PM, or a UX designer, who develop this totally separate skill?</p>.
                 </div>
@@ -151,8 +169,10 @@
         
         <section class="pricing">
             <div class="container">
-                <h3>We've got the perfect package for you</h3>
-                <p>Everyone’s reasons for learning user interface design are different. If you're already a developer, or a PM, or a UX designer, who develop this totally separate skill?</p>
+                <div class="row">
+                    <h3>We've got the perfect package for you</h3>
+                    <p>Everyone’s reasons for learning user interface design are different. If you're already a developer, or a PM, or a UX designer, who develop this totally separate skill?</p>
+                </div>
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="tariff">
@@ -215,7 +235,7 @@
         </section>
 
         <section class="video">
-
+            <div class="container"></div>
         </section>
 
         <section class="reviews">
@@ -231,7 +251,7 @@
         </section>
 
         <section class="download">
-            <div class="conteiner">
+            <div class="container">
                 <div class="row">
                     <h3>Download Giant App Now</h3>
                 </div>
@@ -276,28 +296,36 @@
         <footer class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="social">
-                        <ul class="social-icons">
-                            <li class="social-icons__item">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            </li class="social-icons__item">
-                            <li>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                            </li class="social-icons__item">
-                            <li>
-                                <a href="#"><i class="fab fa-dribbble"></i></a>
-                            </li>
-                            <li class="social-icons__item">
-                                <a href="#"><i class="fab fa-behance"></i></a>
-                            </li>
-                        </ul>
+                    <div class="col-lg">
+                        <div class="social">
+                            <ul class="social-icons d-flex justify-content-center">
+                                <li class="social-icons__item">
+                                    <a href="#"><p><i class="fab fa-facebook-f"></i></p></a>
+                                </li class="social-icons__item">
+                                <li>
+                                    <a href="#"><p><i class="fab fa-twitter"></i></p></a>
+                                </li class="social-icons__item">
+                                <li>
+                                    <a href="#"><p><i class="fab fa-dribbble"></i></p></a>
+                                </li>
+                                <li class="social-icons__item">
+                                    <a href="#"><p><i class="fab fa-behance"></i></p></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg">  
+                        <div class="copyright text-center">
+                            <small>Copyright © 2017  |  UXSEVEN - a sister concern of codepixar.com</small>
+                        </div>
+                    </div> 
                 </div>
             </div>
         </footer>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script src="https://kit.fontawesome.com/7c02182408.js" crossorigin="anonymous"></script>
     </body>
 </html>
