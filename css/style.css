@@ -113,7 +113,7 @@ margin-right: 20px;
 .offer {
     display: flex;
     justify-content: flex-start;
-   margin: 0 -15px 0 -15px;
+   margin: 0 -15px 62px -15px;
 }
 .offer__icon {
     display: flex;
@@ -129,6 +129,10 @@ margin-right: 20px;
 .offer__titie {
     width: 260px;
 }
+.offer__titie h4 {
+  font-weight: 600;
+}
+
 /* end features styles */
 
 /* start dn-leave styles*/
