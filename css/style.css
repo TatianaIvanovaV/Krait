@@ -1,15 +1,20 @@
 html {
     box-sizing: border-box;
-  }
+}
+h1, h2, h3, h4, h5 {
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+}
 *,
 *::before,
 *::after {
     box-sizing: inherit;
 }
 body {
-  font-family: "Dosis", sans-serif;
-  font-size: 16px;
-  font-weight: normal;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
   background: #ffffff;
   color: #222222;
 }
@@ -31,37 +36,15 @@ a:hover {
   color: #ffffff;
  
 }
-.header::after {
-    content: "";
-    display: block;
-    position: relative;
-    z-index: 1;
-    top: -145px;
-    left: 0;
-    background-image: url(./imgs/iphones-header.png) no-repeat;
-    
-}
 .main-header {
   padding-top: 30px;
   padding-bottom: 150px;
-}
-.logo {
-    
 }
 .logo__pic {
   width: 50px;
   height: 40px;
 }
-.logo__title {
-  font-weight: 700;
-  font-size: 24px;
-  color: #ffffff;
-  
-}
 .menu {
- font-family: "Roboto";
-font-size: 16px;
-font-weight: 400;
 margin-top: 10px;
 margin-right: -10px;
 }
@@ -74,28 +57,26 @@ margin-right: -10px;
 .button {
     background-color: #ffffff;
     padding: 7px 15px;
-    font-family: "Roboto";
-    font-size: 16px;
-    font-weight: 400;
-    color: #222;
+    font-weight: 500;
     border: 0;
     border-radius: 20px;
-    
 }
 .button:hover {
     box-shadow: 0 0 0 5px #e25e2e;
 }
 .title {
-
-    max-width: 488px;
+    max-width: 495px;
 }
-.title__App {
-    font-weight: 600;
-    font-size: 3.2em;
+.title h1 {
+    font-size: 3.8em;
     margin-bottom: 25px;
 }
 .title__benefits {
     margin-bottom: 40px;
+}
+.title__benefits li {
+  margin-bottom: 10px;
+  font-weight: 500;
 }
 .title__benefits li i{
 margin-right: 20px;
@@ -129,21 +110,44 @@ margin-right: 20px;
 .offer__titie {
     width: 260px;
 }
-.offer__titie h4 {
-  font-weight: 600;
-}
 
 /* end features styles */
 
 /* start dn-leave styles*/
+.dleave-reasons {
+  margin: 175px 0 175px 0;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+}
+.dleave-title h2 {
+ margin-bottom: 35px;
+}
 .reasons__item i {
   color: #000;
+}
+.dleave-content {
+  margin-top: 82px;
+}
+.reasons {
+  margin-top: 40px;
+}
+.reasons__item {
+  margin-top: 5px;
+  font-weight: 500;
+}
+.fas {
+  margin-right: 20px;
 }
 /* end dn-leave styles*/
 
 /* start screen-shots styles*/
+.scrshot-title{
+  margin: 120px auto 82px auto;
+  max-width: 670px;
+}
 .screen-shots {
-  background: #f7fafc top;
+  background: #f7fafc;
 }
 /* end screen-shots styles*/
 

@@ -14,24 +14,22 @@
         <script src="https://kit.fontawesome.com/7c02182408.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header class="header">
+        <header class="header" id="header">
             <section class="main-header">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-2">
-                            <div class="logo">
-                                <a href="/">
-                                    <img src="./imgs/logo.png" alt="logo" class="logo__pic">
-                                    <span class="logo__title">Giant</span>
-                                </a> 
+                            <div class="logo d-flex justify-content-start">
+                                <img src="./imgs/logo.png" alt="logo" class="logo__pic">
+                                <h3 class="logo__title">Giant</h3>
                             </div>
                         </div>
                         <div class="col-lg-8">
-                            <nav>
+                            <nav class="nav-bar">
                                 <ul class="menu d-flex justify-content-end">
-                                    <li class="menu__item"><a href="#">Home</a></li>
-                                    <li class="menu__item"><a href="#">Features</a></li>
-                                    <li class="menu__item"><a href="#">Pricing</a></li>
+                                    <li class="menu__item"><a class="nav-link" data-value="header" href="#">Home</a></li>
+                                    <li class="menu__item"><a class="nav-link" data-value="features" href="#">Features</a></li>
+                                    <li class="menu__item"><a class="nav-link" data-value="pricing" href="#">Pricing</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -45,7 +43,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="title">
-                            <h1 class="title__App">A Powerful & Unique App Landing Template</h1>
+                            <h1>A Powerful & Unique App Landing Template</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             <ul class="title__benefits">
                                 <li><i class="fas fa-check-circle"></i>Unlimited colors: banner with images, slider or video</li>
@@ -62,7 +60,7 @@
             </div> -->
         </header>
         
-        <section class="features">
+        <section class="features" id="features">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4">
@@ -139,27 +137,31 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
-                        <img src="./imgs/iphone.png" alt="mobile app">
+                        <div class="IMG-iphone ">
+                            <img src="./imgs/iphone.png" alt="mobile app">
+                        </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="dleave-title"></div>
-                            <h3>We don’t leave you stranded</h3>
-                            <p>Everyone’s reasons for learning user interface design are different. If you're already a developer, or a PM, or a UX designer, who develop this totally separate skill?</p>
-                        </div>
-                        <div class="dleave-content">
-                            <p>Everyone’s reasons for learning user interface design are different. If you're already a developer, or a PM,or a UX designer, who develop this totally separate skill? If you're already a developer, or a PM, or a UX designer.</p>
-                            <ul class="reasons">
-                                <li class="reasons__item">
-                                    <i class="fas fa-check-circle"></i>Unlimited colors: banner with images, slider or video
-                                </li>
-                                <li class="reasons__item">
-                                    <i class="fas fa-check-circle"></i>Fully Responsive and powered by HTML5 and CSS3
-                                </li>
-                                <li class="reasons__item">
-                                    <i class="fas fa-check-circle"></i>Very easy to customize : set up in minutes
-                                </li>
-                            </ul>
-                        </div>
+                        <div class="dleave-reasons">   
+                            <div class="dleave-title">
+                                <h2>We don’t leave you stranded</h2>
+                                <p>Everyone’s reasons for learning user interface design are different. If you're already a developer, or a PM, or a UX designer, who develop this totally separate skill?</p>
+                            </div>
+                            <div class="dleave-content">
+                                <p>Everyone’s reasons for learning user interface design are different. If you're already a developer, or a PM,or a UX designer, who develop this totally separate skill? If you're already a developer, or a PM, or a UX designer.</p>
+                                <ul class="reasons">
+                                    <li class="reasons__item">
+                                        <i class="fas fa-check-circle"></i>Unlimited colors: banner with images, slider or video
+                                    </li>
+                                    <li class="reasons__item">
+                                        <i class="fas fa-check-circle"></i>Fully Responsive and powered by HTML5 and CSS3
+                                    </li>
+                                    <li class="reasons__item">
+                                        <i class="fas fa-check-circle"></i>Very easy to customize : set up in minutes
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>    
                     </div>
                 </div>
             </div>  
@@ -168,8 +170,10 @@
         <section class="screen-shots">
             <div class="container">
                 <div class="row">
-                    <h3>Take a look at our screenshots</h3>
-                    <p>Everyone’s reasons for learning user interface design are different. If you're already a developer, or a PM, or a UX designer, who develop this totally separate skill?</p>.
+                    <div class="scrshot-title">
+                        <h2 class="text-center">Take a look at our screenshots</h2>
+                        <p class="text-center">Everyone’s reasons for learning user interface design are different. If you're already a developer, or a PM, or a UX designer, who develop this totally separate skill?</p>
+                    </div>        
                 </div>
                 <div class="slider">
 
@@ -177,16 +181,18 @@
             </div>
         </section>
         
-        <section class="pricing">
+        <section class="pricing" id="pricing">
             <div class="container">
                 <div class="row">
-                    <h3>We've got the perfect package for you</h3>
-                    <p>Everyone’s reasons for learning user interface design are different. If you're already a developer, or a PM, or a UX designer, who develop this totally separate skill?</p>
+                    <div class="pricing-title"></div>
+                        <h2 class="text-center">We've got the perfect package for you</h2>
+                        <p  class="text-center">Everyone’s reasons for learning user interface design are different. If you're already a developer, or a PM, or a UX designer, who develop this totally separate skill?</p>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="tariff">
-                            <div class="tariff__title">Basic</div>
+                            <h5 class="tariff__title">Basic</h5>
                             <div class="tariff__price"><sup>$</sup>12.0<sub>/m</sub></div>
                             <ul class="tariff__benefits">
                                 <li>One User</li>
@@ -200,7 +206,7 @@
                     </div>
                     <div class="col-lg-3">
                         <div class="tariff">
-                            <div class="tariff__title">Standard</div>
+                            <h5 class="tariff__title">Standard</h5>
                             <div class="tariff__price"><sup>$</sup>24.0<sub>/m</sub></div>
                             <ul class="tariff__benefits">
                                 <li>Five User</li>
@@ -214,7 +220,7 @@
                     </div>
                     <div class="col-lg-3">
                         <div class="tariff">
-                            <div class="tariff__title">Premium</div>
+                            <h5 class="tariff__title">Premium</h5>
                             <div class="tariff__price"><sup>$</sup>250.0<sub>/m</sub></div>
                             <ul class="tariff__benefits">
                                 <li>Twenty User</li>
@@ -228,7 +234,7 @@
                     </div>
                     <div class="col-lg-3">
                         <div class="tariff">
-                            <div class="tariff__title">Enterprise</div>
+                            <h5 class="tariff__title">Enterprise</h5>
                             <div class="tariff__price"><sup>$</sup>999.0<sub>/m</sub></div>
                             <ul class="tariff__benefits">
                                 <li>Unlimited User</li>
@@ -337,5 +343,6 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src='./js/main.js'></script>
     </body>
 </html>
