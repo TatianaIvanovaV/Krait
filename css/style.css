@@ -113,11 +113,14 @@ margin-right: 20px;
 .offer {
     display: flex;
     justify-content: flex-start;
+   margin: 0 -15px 0 -15px;
 }
 .offer__icon {
     display: flex;
-    
+    align-items: center;
+    justify-content: center;
     width: 75px;
+    height: 75px;
     margin-right: 25px;
   color: #f31f79;
   border: 1px solid #eeeeee;
