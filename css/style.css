@@ -30,9 +30,17 @@ img {
 a:hover {
     text-decoration: none;
 }
+.button {
+  background-color: #ffffff;
+  padding: 5px 30px;
+  font-weight: 500;
+  height: 40px;
+  border: 0;
+  border-radius: 20px;
+}
 /* start header styles */
 .header {
-    background: linear-gradient(to right, #fd712c, #f31e7a);
+  background: linear-gradient(to right, #fd712c, #f31e7a);
   color: #ffffff;
  
 }
@@ -54,12 +62,8 @@ margin-right: -10px;
 .menu__item a {
   color: #ffffff;
 }
-.button {
-    background-color: #ffffff;
-    padding: 7px 15px;
-    font-weight: 500;
-    border: 0;
-    border-radius: 20px;
+.download-btn {
+  width: 155px;
 }
 .button:hover {
     box-shadow: 0 0 0 5px #e25e2e;
@@ -83,6 +87,7 @@ margin-right: 20px;
 }
 .explording-btn {
     margin-bottom: 215px;
+    width: 195px;
 }
 /* end header styles */
 
@@ -94,7 +99,7 @@ margin-right: 20px;
 .offer {
     display: flex;
     justify-content: flex-start;
-   margin: 0 -15px 62px -15px;
+   
 }
 .offer__icon {
     display: flex;
@@ -116,9 +121,6 @@ margin-right: 20px;
 /* start dn-leave styles*/
 .dleave-reasons {
   margin: 175px 0 175px 0;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 14px;
 }
 .dleave-title h2 {
  margin-bottom: 35px;
@@ -146,13 +148,76 @@ margin-right: 20px;
   margin: 120px auto 82px auto;
   max-width: 670px;
 }
+.scrshot-title h2 {
+  margin-bottom: 35px;
+}
 .screen-shots {
   background: #f7fafc;
 }
 /* end screen-shots styles*/
 
 /* start pricing styles*/
-.pricing {
+.pricing-title {
+  margin: 120px auto 82px auto;
+  max-width: 670px;
+}
+.pricing-title h2 {
+  margin-bottom: 35px;
+}
+.tariff {
+  border: 1px solid grey;
+  text-align: center;
+  background: #f7fafc;
+}
+.tariff__title {
+  padding-top: 10px;
+}
+.tariff__price {
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  padding: 10% 2rem 5%;
+  /*background: #fff;*/
+  background: linear-gradient(to right, #fd712c, #f31e7a);
+  position: relative;
+}
+.tariff__price::after {
+  content: " ";
+  width: 100%;
+  position: absolute;
+  padding-top: 10%;
+  top: 100%;
+  left: 0;
+  background: linear-gradient(to right top, transparent 50%, #fd712c 40%,#f9514a 10%) left / 50% 100% no-repeat, linear-gradient(to left top, transparent 50%, #f31e7a 50%, #f9514a 40%) right / 50% 100% no-repeat;
+}
+.tariff__price sup {
+  font-size: 10px;
+}
+.tariff__price sub {
+  font-size: 10px;
+}
+.tariff__benefits {
+margin-top: 40px;
+}
+.tariff__benefits li {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+border-bottom: 1px dashed #eeeeee;  
+}
+.tariff__benefits li:last-child {
+  border-bottom: none;
+}
+.tariff__trial {
+ color: #b0b0b0;
+}
+.buy-btn {
+  border: 2px solid #eeeeee;
+  width: 140px;
+  margin-bottom: 40px;
+}
+.buy-btn:hover {
+  box-shadow: none;
 }
 /* end pricing styles*/
 
@@ -175,7 +240,7 @@ margin-right: 20px;
 }
 
 .copyright {
-  font-family: "Roboto", sans-serif;
+  
 }
 
 /* end footer styles*/
