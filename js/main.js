@@ -4,3 +4,6 @@ $(".nav-bar a").click(function(){
     },1000)
     
    })
+
+
+   

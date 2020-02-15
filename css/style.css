@@ -1,7 +1,7 @@
 html {
     box-sizing: border-box;
 }
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Dosis", sans-serif;
   font-weight: 600;
 }
@@ -25,8 +25,10 @@ li {
   padding: 0;
 }
 img {
-  width: 100%;
+  
+  display: block;
 }
+
 a:hover {
     text-decoration: none;
 }
@@ -41,6 +43,7 @@ a:hover {
 /* start header styles */
 .header {
   background: linear-gradient(to right, #fd712c, #f31e7a);
+  background-size: 100%;
   color: #ffffff;
  
 }
@@ -99,7 +102,7 @@ margin-right: 20px;
 .offer {
     display: flex;
     justify-content: flex-start;
-   
+   border: 1px solid #eee;
 }
 .offer__icon {
     display: flex;
@@ -179,9 +182,9 @@ margin-right: 20px;
   padding: 10% 2rem 5%;
   /*background: #fff;*/
   background: linear-gradient(to right, #fd712c, #f31e7a);
-  position: relative;
+  
 }
-.tariff__price::after {
+/*.tariff__price::after {
   content: " ";
   width: 100%;
   position: absolute;
@@ -189,7 +192,7 @@ margin-right: 20px;
   top: 100%;
   left: 0;
   background: linear-gradient(to right top, transparent 50%, #fd712c 40%,#f9514a 10%) left / 50% 100% no-repeat, linear-gradient(to left top, transparent 50%, #f31e7a 50%, #f9514a 40%) right / 50% 100% no-repeat;
-}
+}*/
 .tariff__price sup {
   font-size: 10px;
 }
@@ -222,12 +225,63 @@ border-bottom: 1px dashed #eeeeee;
 /* end pricing styles*/
 
 /* start video styles*/
+
 /* end video styles*/
 
 /* start reviews styles*/
+.review__title {
+margin: 120px auto 82px auto;
+max-width: 670px;
+}
 /* end reviews styles*/
+.left-arrow {
+  width: 40px;
+  height: 40px;
+  color: #777777;
+  border: 1px solid #eee;
+  border-radius: 50%;
+}
+.reviews {
+  margin-bottom: 120px;;
+}
+.review-item {
+  background: #f7fafc;
+  padding: 40px;
+  
+  cursor: pointer;
+}
+.review-item:hover {
+  box-shadow: 0 10px 50px 25px #ececec;
+  background: #fff;
+}
+.review__title {
+  margin-bottom: 30px;
+}
+.review-item__autor-img {
+  display: inline-block;
+  float: left;
 
+}
+.review-item__autor-sign {
+ margin: 20px;
+ display: inline-block;
+}
+.review-item__autor-sign h6 {
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
 /* start download styles*/
+.download {
+  background: linear-gradient(to right, #fd712c, #f31e7a);
+}
+.download-title {
+  color: #ffffff;
+  margin: 120px auto 88px auto;
+  
+}
+.dwnld-link {
+  background: #ffffff;
+}
 /* end download styles*/
 
 /* start footer styles*/
