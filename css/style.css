@@ -43,6 +43,9 @@ a:hover {
   border: 0;
   border-radius: 20px;
 }
+.button:hover {
+  box-shadow: 0 0 0 5px #e25e2e;
+}
 /* start header styles */
 .header {
   background: linear-gradient(to right, #fd712c, #f31e7a);
@@ -60,23 +63,22 @@ a:hover {
   padding-top: 5px;
   font-weight: 700;
 }
-.menu {
-  
-}
 .menu__item {
-  margin: -5px;
-  border: 1px solid black;
-  text-align: end;
+  margin-left: 37px;
+}
+.text-end {
+  margin: -5px -15px 0 0;
 }
 .menu__item a {
   color: #ffffff;
-
+font-weight: 500;
 }
 .download-btn {
-  width: 155px;
+  max-width: 160px;
 }
-.button:hover {
-    box-shadow: 0 0 0 5px #e25e2e;
+
+.main-title {
+  padding-top: 120px;
 }
 .title {
     max-width: 495px;
@@ -120,9 +122,6 @@ margin-right: 20px;
     border: 1px solid #eeeeee;
     border-radius: 50%;
 }
-.offer__icon .fas  {
-  padding-left: 20px;
-}
 .offer__titie {
   width: 80%; 
   padding: 0 0 0 22px;
@@ -134,48 +133,50 @@ margin-right: 20px;
 /* end features styles */
 
 /* start dn-leave styles*/
-.dleave-reasons {
-  margin: 175px 0 175px 0;
+.dn-leave-reasons {
+  padding: 175px 0;
 }
 .dleave-title h2 {
- margin-bottom: 35px;
+ padding-bottom: 15px;
+ font-size: 2.2rem;
 }
 .reasons__item i {
   color: #000;
 }
 .dleave-content {
-  margin-top: 82px;
+  margin-top: 60px;
 }
 .reasons {
-  margin-top: 40px;
+  margin-top: 25px;
 }
 .reasons__item {
   margin-top: 5px;
   font-weight: 500;
 }
-.fas {
+.reasons__item .fas {
   margin-right: 20px;
+}
+.dn-leave-iphone {
+  margin-right: 125px;
 }
 /* end dn-leave styles*/
 
 /* start screen-shots styles*/
+.screen-shots {
+  padding: 120px 0 120px;
+  background: #f7fafc;
+}
 .scrshot-title{
-  margin: 120px auto 82px auto;
+  margin: 0 auto 82px;
   max-width: 670px;
 }
 .scrshot-title h2 {
-  margin-bottom: 35px;
+  padding-bottom: 15px;
 }
-.screen-shots {
-  background: #f7fafc;
-}
+
 /* end screen-shots styles*/
 
 /* start pricing styles*/
-
-.container  {
-  padding: 0;
-}
 .pricing {
 padding: 120px 0;
 }

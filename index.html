@@ -26,12 +26,24 @@
                                 <h2 class="logo__title">Giant</h2>
                             </div>
                         </div>
-                        <div class="col-sm-8 col-md-6 col-lg-8">
+                        <div class="col-sm-6 col-md-6 col-lg-8">
                             <nav class="nav-bar">
-                                <ul class="menu d-flex justify-content-end">
-                                    <li class="menu__item"><a class="nav-link" data-value="header" href="#">Home</a></li>
-                                    <li class="menu__item"><a class="nav-link" data-value="features" href="#">Features</a></li>
-                                    <li class="menu__item"><a class="nav-link" data-value="pricing" href="#">Pricing</a></li>
+                            <ul class="menu d-flex justify-content-end">
+                                    <li class="menu__item">
+                                        <a class="nav-link" data-value="header" href="#">
+                                            <div class="text-end">Home</div>
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="nav-link" data-value="features" href="#">
+                                            <div class="text-end">Features</div>
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="nav-link" data-value="pricing" href="#">
+                                            <div class="text-end">Pricing</div>
+                                        </a>
+                                    </li>
                                 </ul>
                             </nav>
                         </div>
@@ -57,7 +69,9 @@
                             </div> 
                         </div>
                         <div class="col-sm-6">
-                            <img src="./imgs/iphones-header.png" alt="">
+                            <div class="main-title-iphone">
+                                <img src="./imgs/iphones-header.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -142,13 +156,13 @@
         <section class="dn-leave">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
-                        <div class="IMG-iphone ">
+                    <div class="d-sm-none d-md-block col-md-6 col-lg-6">
+                        <div class="dn-leave-iphone d-flex justify-content-center">
                             <img src="./imgs/iphone.png" alt="mobile app">
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="dleave-reasons">   
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="dn-leave-reasons">   
                             <div class="dleave-title">
                                 <h2>We don’t leave you stranded</h2>
                                 <p>Everyone’s reasons for learning user interface design are different. If you're already a developer, or a PM, or a UX designer, who develop this totally separate skill?</p>
@@ -176,13 +190,15 @@
         <section class="screen-shots">
             <div class="container">
                 <div class="row">
-                    <div class="scrshot-title">
+                    <div class="col-sm-auto scrshot-title">
                         <h2 class="text-center">Take a look at our screenshots</h2>
                         <p class="text-center">Everyone’s reasons for learning user interface design are different. If you're already a developer, or a PM, or a UX designer, who develop this totally separate skill?</p>
                     </div>        
                 </div>
-                <div class="slider">
+                <div class="row">
+                    <div class="slider">
 
+                    </div>
                 </div>
             </div>
         </section>
@@ -264,7 +280,17 @@
 
         <section class="video">
             <div class="container">
-                
+                <div class="row">
+                    <div class="col">
+                        <a href="https://www.youtube.com/embed/euouOKUHzIY">
+                            <img src="./imgs/pre-roll.png">
+                        </a>
+                        <!--<div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/euouOKUHzIY" srcdoc="" frameborder="0"></iframe>
+                            
+                        </div>-->
+                    </div>
+                </div>                
             </div>
         </section>
 
@@ -338,17 +364,19 @@
                 </div> 
                 <div class="row">
                     <div class="col-sm-12 col-md-6 col-lg-4">
-                        <div class="download-link d-flex justify-content-start">
-                            <div class="row">
-                                <div class="download-link__icon">
-                                    <i class="fab fa-apple fa-4x"></i>
+                        <a href="#">
+                            <div class="download-link d-flex justify-content-start">
+                                <div class="row">
+                                    <div class="download-link__icon">
+                                        <i class="fab fa-apple fa-4x"></i>
+                                    </div>
+                                    <div class="download-link__title">
+                                        <h3>Download</h3>
+                                        <p>Download from app store</p>
+                                    </div> 
                                 </div>
-                                <div class="download-link__title">
-                                    <h3>Download</h3>
-                                    <p>Download from app store</p>
-                                </div> 
-                            </div>
-                        </div>  
+                            </div> 
+                        </a> 
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4">
                         <a href="#">
@@ -370,18 +398,20 @@
                         </a>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4">
-                        <div class="download-link d-flex justify-content-start">
-                            <div class="row">
-                                <div class="download-link__icon">
-                                    <i class="fab fa-windows fa-4x"></i>
-                                    
+                        <a href="#">
+                            <div class="download-link d-flex justify-content-start">
+                                <div class="row">
+                                    <div class="download-link__icon">
+                                        <i class="fab fa-windows fa-4x"></i>
+                                        
+                                    </div>
+                                    <div class="download-link__title">
+                                        <h3>Download</h3>
+                                        <p>Download from microsoft store</p>
+                                    </div>    
                                 </div>
-                                <div class="download-link__title">
-                                    <h3>Download</h3>
-                                    <p>Download from microsoft store</p>
-                                </div>    
                             </div>
-                        </div>
+                        </a>
                     </div>    
                 </div>
             </div>
