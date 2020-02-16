@@ -12,19 +12,21 @@
         <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600,700|Roboto:300,400,500,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <script src="https://kit.fontawesome.com/7c02182408.js" crossorigin="anonymous"></script>
+        
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     </head>
     <body>
         <header class="header" id="header">
             <section class="main-header">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-2">
+                        <div class="col-sm-4 col-md-4 col-lg-2">
                             <div class="logo d-flex justify-content-start">
                                 <img src="./imgs/logo.png" alt="logo" class="logo__pic">
-                                <h3 class="logo__title">Giant</h3>
+                                <h2 class="logo__title">Giant</h2>
                             </div>
                         </div>
-                        <div class="col-lg-8">
+                        <div class="col-sm-8 col-md-6 col-lg-8">
                             <nav class="nav-bar">
                                 <ul class="menu d-flex justify-content-end">
                                     <li class="menu__item"><a class="nav-link" data-value="header" href="#">Home</a></li>
@@ -33,7 +35,7 @@
                                 </ul>
                             </nav>
                         </div>
-                        <div class="col-lg-2">
+                        <div class="col-sm-12 col-md-2 col-lg-2 d-flex justify-content-end">
                             <button class="download-btn button">Download Now</button>
                         </div>
                     </div>    
@@ -42,31 +44,34 @@
             <section class="main-title">
                 <div class="container">
                     <div class="row">
-                        <div class="title">
-                            <h1>A Powerful & Unique App Landing Template</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <ul class="title__benefits">
-                                <li><i class="fas fa-check-circle"></i>Unlimited colors: banner with images, slider or video</li>
-                                <li><i class="fas fa-check-circle"></i>Fully Responsive and powered by HTML5 and CSS3</li>
-                                <li><i class="fas fa-check-circle"></i>Very easy to customize : set up in minutes</li>
-                            </ul>
-                            <button class="explording-btn button">Start Exploring Us</button>
-                        </div> 
+                        <div class="col-sm-6">
+                            <div class="title">
+                                <h1>A Powerful & Unique App Landing Template</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <ul class="title__benefits">
+                                    <li><i class="fas fa-check-circle"></i>Unlimited colors: banner with images, slider or video</li>
+                                    <li><i class="fas fa-check-circle"></i>Fully Responsive and powered by HTML5 and CSS3</li>
+                                    <li><i class="fas fa-check-circle"></i>Very easy to customize : set up in minutes</li>
+                                </ul>
+                                <button class="explording-btn button">Start Exploring Us</button>
+                            </div> 
+                        </div>
+                        <div class="col-sm-6">
+                            <img src="./imgs/iphones-header.png" alt="">
+                        </div>
                     </div>
                 </div>
-            </section>
-            <!--<div class="BG-iphones">
-                <img src="./imgs/iphones-header.png" alt="" class="BG-iphones__img">
-            </div> -->
+            </section> 
         </header>
         
         <section class="features" id="features">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
                         <div class="offer">
                             <div class="offer__icon">
-                                <i class="fas fa-tags fa-lg"></i>
+                            <!--    <i class="fas fa-tags fa-2x"></i> -->
+                                <i class="icon-tags icon-2x"></i>
                             </div>
                             <div class="offer__titie">
                                 <h4>Sell any product online</h4>
@@ -74,10 +79,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
                         <div class="offer">
                             <div class="offer__icon">
-                                <i class="fas fa-cog fa-lg"></i>
+                            <!--  <i class="fas fa-cog fa-2x"></i> -->  
+                            <i class="icon-cog icon-2x"></i>
                             </div>
                             <div class="offer__titie">
                                 <h4>Very easy to customize</h4>
@@ -85,10 +91,10 @@
                             </div>
                         </div>  
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
                         <div class="offer">
                             <div class="offer__icon">
-                                <i class="fas fa-paint-brush fa-lg"></i>
+                                <i class="fas fa-paint-brush fa-2x"></i>
                             </div>
                             <div class="offer__titie">
                                 <h4>Unlimited colors</h4>
@@ -96,10 +102,10 @@
                             </div>
                         </div>  
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
                         <div class="offer">
                             <div class="offer__icon">
-                                <i class="fas fa-fire-extinguisher fa-lg"></i>
+                                <i class="fas fa-fire-extinguisher fa-2x"></i>
                             </div>
                             <div class="offer__titie">
                                 <h4>Responsive, HTML5, CSS3</h4>
@@ -107,10 +113,10 @@
                             </div>
                         </div>  
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
                         <div class="offer">
                             <div class="offer__icon">
-                                <i class="fas fa-file-alt fa-lg"></i>
+                                <i class="fas fa-file-alt fa-2x"></i>
                             </div>
                             <div class="offer__titie">
                                 <h4>Designed to convert</h4>
@@ -118,10 +124,10 @@
                             </div>
                         </div>  
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
                         <div class="offer">
                             <div class="offer__icon">
-                                <i class="far fa-life-ring fa-lg"></i>
+                                <i class="far fa-life-ring fa-2x"></i>
                             </div>
                             <div class="offer__titie">
                                 <h4>With no boundaries</h4>
@@ -326,43 +332,57 @@
         <section class="download">
             <div class="container">
                 <div class="row">
-                    
-                        <div class="col-sm-12 download-title">
+                    <div class="col-sm-12 download-title">
                             <h2 class="text-center">Download Giant App Now</h2>
-                        </div>
-                    <div class="col-sm-12">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="download-link">
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="download-link d-flex justify-content-start">
+                            <div class="row">
+                                <div class="download-link__icon">
+                                    <i class="fab fa-apple fa-4x"></i>
+                                </div>
+                                <div class="download-link__title">
+                                    <h3>Download</h3>
+                                    <p>Download from app store</p>
+                                </div> 
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="#">
+                            <div class="download-link d-flex justify-content-start">
+                                <div class="row">
                                     <div class="download-link__icon">
-                                        <i class="fab fa-apple fa-5x"></i>
+                                        <i class="icon-android icon-4x"></i>   
+                                    <!--  <i class="fab fa-android fa-4x">   
+                                        </i>--> 
+                                        
+                                    
                                     </div>
                                     <div class="download-link__title">
-                                        <h4>Download</h4>
-                                        <p>Download from app store</p>
+                                        <h3>Download</h3>
+                                        <p>Download from play store</p>
                                     </div> 
-                                </div>  
+                                </div>       
                             </div>
-                            <div class="col-sm-4 download-link">
-                                <div class="dwnld-link__icon">
-                                    <i class="fab fa-android"></i>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="download-link d-flex justify-content-start">
+                            <div class="row">
+                                <div class="download-link__icon">
+                                    <i class="fab fa-windows fa-4x"></i>
+                                    
                                 </div>
-                                <div class="dwnld-link__title">
-                                    <h4>Download</h4>
-                                    <p>Download from play store</p>
-                                </div>        
-                            </div>
-                            <div class="col-sm-4 download-link">
-                                <div class="dwnld-link__icon ">
-                                    <i class="fab fa-windows fa-3x"></i>
-                                </div>
-                                <div class="dwnld-link__title">
-                                    <h4>Download</h4>
+                                <div class="download-link__title">
+                                    <h3>Download</h3>
                                     <p>Download from microsoft store</p>
                                 </div>    
                             </div>
-                        </div>    
-                    
+                        </div>
+                    </div>    
                 </div>
             </div>
         </section>

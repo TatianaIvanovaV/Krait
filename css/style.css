@@ -14,7 +14,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 28px;
   background: #ffffff;
   color: #222222;
 }
@@ -48,25 +48,29 @@ a:hover {
   background: linear-gradient(to right, #fd712c, #f31e7a);
   background-size: 100%;
   color: #ffffff;
- 
+ padding: 30px 0;
 }
-.main-header {
-  padding-top: 30px;
-  padding-bottom: 150px;
-}
+
 .logo__pic {
   width: 50px;
   height: 40px;
 }
+.logo__title {
+  display: inline-block;
+  padding-top: 5px;
+  font-weight: 700;
+}
 .menu {
-margin-top: 10px;
-margin-right: -10px;
+  
 }
 .menu__item {
-    margin-left: 50px;
+  margin: -5px;
+  border: 1px solid black;
+  text-align: end;
 }
 .menu__item a {
   color: #ffffff;
+
 }
 .download-btn {
   width: 155px;
@@ -92,7 +96,6 @@ margin-right: -10px;
 margin-right: 20px;
 }
 .explording-btn {
-    margin-bottom: 215px;
     width: 195px;
 }
 /* end header styles */
@@ -100,12 +103,12 @@ margin-right: 20px;
 /* start features styles */
 .features {
   border-bottom: 1px solid #eeeeee;
-  padding-top: 120px;
+  padding: 120px 0 60px;
 }
 .offer {
     display: flex;
     justify-content: flex-start;
-   border: 1px solid #eee;
+    padding: 0 0 60px 0;
 }
 .offer__icon {
     display: flex;
@@ -113,15 +116,21 @@ margin-right: 20px;
     justify-content: center;
     width: 75px;
     height: 75px;
-    margin-right: 25px;
-  color: #f31f79;
-  border: 1px solid #eeeeee;
-  border-radius: 50%;
+    color: #f31f79;
+    border: 1px solid #eeeeee;
+    border-radius: 50%;
+}
+.offer__icon .fas  {
+  padding-left: 20px;
 }
 .offer__titie {
-    width: 260px;
+  width: 80%; 
+  padding: 0 0 0 22px;
 }
-
+.offer__titie h4 {
+  display: inline-block;
+  margin-top: -10px;
+}
 /* end features styles */
 
 /* start dn-leave styles*/
@@ -241,7 +250,6 @@ border-bottom: 1px dashed #eeeeee;
 /* start reviews styles*/
 .reviews {
   padding: 120px 0;
-  
 }
 .review-title {
 margin: 0 auto 82px;
@@ -281,26 +289,30 @@ max-width: 670px;
 /* start download styles*/
 .download {
   background: linear-gradient(to right, #fd712c, #f31e7a);
+  padding: 120px 0;
 }
 
 .download-title {
   color: #ffffff;
-  margin: 120px auto 88px auto;
+  margin: 0 auto 82px;
  }
 .download-link {
-  display: inline-block;
   background: #ffffff;
   border-radius: 2px;
+  color: #222;
+  overflow: hidden;
 }
 .download-link__icon {
-float: left;
   width: 115px;
   height: 115px;
   background: #f7fafc;
   color: #777;
   
+  padding: 25px 0 0 45px;
 }
-
+.download-link__title {
+  
+}
 .download-link__title p {
   color: #777777;
 }
