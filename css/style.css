@@ -18,6 +18,9 @@ body {
   background: #ffffff;
   color: #222222;
 }
+.container  {
+  padding: 0;
+}
 ul,
 li {
   display: block;
@@ -160,14 +163,20 @@ margin-right: 20px;
 /* end screen-shots styles*/
 
 /* start pricing styles*/
-.pricing-title {
-  margin: 120px auto 82px auto;
+
+.container  {
+  padding: 0;
+}
+.pricing {
+padding: 120px 0;
+}
+.price-title {
+  margin: 0 auto 82px;
   max-width: 670px;
 }
-.pricing-title h2 {
-  margin-bottom: 35px;
-}
+
 .tariff {
+  
   border: 1px solid grey;
   text-align: center;
   background: #f7fafc;
@@ -176,14 +185,18 @@ margin-right: 20px;
   padding-top: 10px;
 }
 .tariff__price {
-  font-family: "Dosis", sans-serif;
-  font-weight: 600;
-  font-size: 40px;
-  padding: 10% 2rem 5%;
-  /*background: #fff;*/
-  background: linear-gradient(to right, #fd712c, #f31e7a);
+  border: 1px solid red;
   
-}
+  /*background: #fff;*/
+  /*background: linear-gradient(to right, #fd712c, #f31e7a);*/
+  }
+  .tariff__price--upper{
+    padding-top: ; 
+  } 
+  .tariff__price--buttom {
+    
+border: 1px solid grey;
+  }
 /*.tariff__price::after {
   content: " ";
   width: 100%;
@@ -193,10 +206,7 @@ margin-right: 20px;
   left: 0;
   background: linear-gradient(to right top, transparent 50%, #fd712c 40%,#f9514a 10%) left / 50% 100% no-repeat, linear-gradient(to left top, transparent 50%, #f31e7a 50%, #f9514a 40%) right / 50% 100% no-repeat;
 }*/
-.tariff__price sup {
-  font-size: 10px;
-}
-.tariff__price sub {
+.tariff__price sup, .tariff__price sub {
   font-size: 10px;
 }
 .tariff__benefits {
@@ -229,11 +239,14 @@ border-bottom: 1px dashed #eeeeee;
 /* end video styles*/
 
 /* start reviews styles*/
-.review__title {
-margin: 120px auto 82px auto;
+.reviews {
+  padding: 120px 0;
+  
+}
+.review-title {
+margin: 0 auto 82px;
 max-width: 670px;
 }
-/* end reviews styles*/
 .left-arrow {
   width: 40px;
   height: 40px;
@@ -241,47 +254,57 @@ max-width: 670px;
   border: 1px solid #eee;
   border-radius: 50%;
 }
-.reviews {
-  margin-bottom: 120px;;
-}
 .review-item {
+ 
   background: #f7fafc;
   padding: 40px;
-  
   cursor: pointer;
 }
 .review-item:hover {
   box-shadow: 0 10px 50px 25px #ececec;
   background: #fff;
 }
-.review__title {
-  margin-bottom: 30px;
-}
 .review-item__autor-img {
-  display: inline-block;
-  float: left;
-
+ margin: 0 15px;
 }
 .review-item__autor-sign {
- margin: 20px;
- display: inline-block;
+ padding-top: 15px;
 }
 .review-item__autor-sign h6 {
   font-size: 1.1rem;
   margin-bottom: 0;
+  
 }
+/* end reviews styles*/
+
+
 /* start download styles*/
 .download {
   background: linear-gradient(to right, #fd712c, #f31e7a);
 }
+
 .download-title {
   color: #ffffff;
   margin: 120px auto 88px auto;
+ }
+.download-link {
+  display: inline-block;
+  background: #ffffff;
+  border-radius: 2px;
+}
+.download-link__icon {
+float: left;
+  width: 115px;
+  height: 115px;
+  background: #f7fafc;
+  color: #777;
   
 }
-.dwnld-link {
-  background: #ffffff;
+
+.download-link__title p {
+  color: #777777;
 }
+
 /* end download styles*/
 
 /* start footer styles*/
