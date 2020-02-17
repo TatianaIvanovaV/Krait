@@ -290,7 +290,7 @@ max-width: 670px;
 /* start download styles*/
 .download {
   background: linear-gradient(to right, #fd712c, #f31e7a);
-  padding: 120px 0;
+  padding: 120px 0 90px;
 }
 
 .download-title {
@@ -302,33 +302,59 @@ max-width: 670px;
   border-radius: 2px;
   color: #222;
   overflow: hidden;
+  margin-bottom: 30px;
+ height: 115px;
+}
+a:hover .download-link__icon .fab {
+  background: -webkit-gradient(linear, left top, right top, from(#fd712c), to(#f31e7a));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .download-link__icon {
   width: 115px;
-  height: 115px;
-  background: #f7fafc;
+  background:  #f7fafc;
   color: #777;
-  
-  padding: 25px 0 0 45px;
+  padding: 30px 30px;
+}
+.download-link__icon .fa-apple {
+  padding-left: 7px;
+}
+.download-link__icon .fab {
+  -webkit-text-stroke: 2px#dee1e2;
 }
 .download-link__title {
-  
+  padding: 25px 0 0 20px;
 }
 .download-link__title p {
   color: #777777;
+  padding-top: -10px;
 }
 
 /* end download styles*/
 
 /* start footer styles*/
 .footer {
-  background-color: #000;
+  background: #000;
   color: #ffffff;
+  padding: 60px 0;
 }
-.social-icons__item p {
+.social-icons__item .fab {
   color: #ffffff;
+  
 }
-
+.social-icons__item {
+  padding: 0 16px 10px;
+}
+.fa-facebook-f, .fa-dribbble {
+  position: relative;
+  top: -2px;
+  left: -4px;
+}
+a:hover .social-icons__item-wrap .fab {
+  background: -webkit-gradient(linear, left top, right top, from(#fd712c), to(#f31e7a));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .copyright {
   
 }
