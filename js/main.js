@@ -6,4 +6,3 @@ $(".nav-bar a").click(function(){
    })
 
 
-   
