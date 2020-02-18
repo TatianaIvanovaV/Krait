@@ -44,9 +44,7 @@ a:hover {
   border-radius: 20px
   
 }
-.button:hover {
-  box-shadow: 0 0 0 5px #e25e2e;
-}
+
 /* start header styles */
 .header {
   background: linear-gradient(to right, #fd712c, #f31e7a);
@@ -100,6 +98,11 @@ margin-right: 20px;
 }
 .explording-btn {
     width: 195px;
+}
+.explording-btn:hover,
+.download-btn:hover {
+  box-shadow: 0 0 0 5px #e25e2e;
+  
 }
 /* end header styles */
 
@@ -184,6 +187,8 @@ padding: 120px 0 90px;
   margin-bottom: 30px;
   text-align: center;
   background: #f7fafc;
+  cursor: pointer;
+  
 }
 .tariff__title {
   padding-top: 10px;
@@ -191,7 +196,8 @@ padding: 120px 0 90px;
 .tariff__price {
   padding: 20px 0 0;
   background: #fff;
-  /*background: linear-gradient(to right, #fd712c, #f31e7a);*/
+  
+  
   }
 .tariff__price h1 {
   font-size: 2.8rem;
@@ -202,27 +208,22 @@ padding: 120px 0 90px;
     top: 5px;   
 }
 .tariff__price-but { 
-  top: 25px;
+  top: 23px;
 }
 .tariff__price-upr h6,
 .tariff__price-but h6 {
   font-size: 1.3rem;
 }
-.tariff__price::after {
-  content: "";
+.triangle {
   width: 100%;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: 
-linear-gradient(to right top, transparent 50%, #29cb75 50%) left / 50.025% 100% no-repeat,
-linear-gradient(to left top, transparent 50%, #29cb75 50%) right / 50.025% 100% no-repeat;
+  height: 40px;
+  margin-top: -2px;
+  background: #fff;
+  clip-path: polygon(0 0,0 5%, 50% 100%, 100% 5%,100% 0);
 }
-
-
 .tariff__benefits {
-margin-top: 40px;
-}
+  padding-top: 30px;
+ }
 .tariff__benefits li {
   width: 75%;
   margin-left: auto;
@@ -236,12 +237,28 @@ border-bottom: 1px dashed #eeeeee;
  color: #b0b0b0;
 }
 .buy-btn {
-  border: 2px solid #eeeeee;
+  border: 1px solid #eeeeee;
   width: 140px;
   margin-bottom: 40px;
 }
-.buy-btn:hover {
-  box-shadow: none;
+
+.tariff:hover {
+  box-shadow: 0 0 20px 4px#e5e5e5;
+  
+}
+.tariff:hover .buy-btn{
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 0 0 3px #e5e5e5;
+}
+.tariff:hover .tariff__price,
+.tariff:hover .triangle,
+.tariff:hover .buy-btn
+ {
+  background: linear-gradient(to right, #fd712c, #f31e7a);
+  color: #fff;
+}
+.tariff:hover .triangle {
+border-top: 1px solid linear-gradient(to right, #fd712c, #f31e7a);
 }
 /* end pricing styles*/
 
