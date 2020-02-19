@@ -1,3 +1,6 @@
+@import url("/css/carousel.css");
+@import url("/css/content.css");
+
 html {
     box-sizing: border-box;
 }
@@ -166,15 +169,39 @@ margin-right: 20px;
 
 /* start screen-shots styles*/
 .screen-shots {
-  padding: 120px 0;
+  padding: 120px 0 300px;
   background: #f7fafc;
 }
 .scrshot-title{
   margin: 0 auto 82px;
   max-width: 670px;
 }
-/* end screen-shots styles*/
-
+.nextButton, .prevButton {
+position: relative;
+width: 20px;
+border: 1px solid #f0f0f0;
+color: #7777;
+border-radius: 50%;
+text-align: center;
+padding: 5px;
+margin-top:calc(15% - 20px);
+}
+.nextButton {
+ margin-right: -200px;
+ 
+}
+.prevButton {
+  margin-left: -200px;
+}
+.nextButton:hover , .prevButton:hover  {
+  border-color: #dee1e2;
+  box-shadow: 0 0 0 3px #dee1e2;
+    background: linear-gradient(to right, #fd712c, #f31e7a);
+}
+.fa-long-arrow-alt-right .nextButton:hover , .fa-long-arrow-alt-left .prevButton:hover  {
+  color: #fff;
+}
+/* end screen-shots styles*/  
 /* start pricing styles*/
 .pricing {
 padding: 120px 0 90px;
@@ -292,23 +319,8 @@ max-width: 670px;
 .review-item__autor-sign h6 {
   font-size: 1.1rem;
   margin-bottom: 0;
-  
 }
-.carousel-arrow {
 
-  width: 40px;
-  height: 40px;
-  border: 1px solid #efefef;
-  border-radius: 50%;
-  color :#777;
-  padding-top: 7px;
-  margin: 0 47px;
-}
-.carousel-arrow:hover {
-color: #f7fafc;
-box-shadow: 0 4px 40px 12px #f6f6f6;
-background: linear-gradient(to right, #fd712c, #f31e7a);
-}
 /* end reviews styles*/
 
 

@@ -3,6 +3,7 @@ $(".nav-bar a").click(function(){
      scrollTop:$("#" + $(this).data('value')).offset().top
     },1000)
     
-   })
+ });
 
 
+ 
