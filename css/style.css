@@ -1,8 +1,9 @@
 @import url("/css/carousel.css");
-@import url("/css/content.css");
+@import url("/css/slick.css");
+/*@import url("/css/slick-theme.css");*/
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: "Dosis", sans-serif;
@@ -13,6 +14,10 @@ h1, h2, h3, h4, h5, h6 {
 *::after {
     box-sizing: inherit;
 }
+img {
+  display: block;
+  
+}
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -20,6 +25,7 @@ body {
   line-height: 28px;
   background: #ffffff;
   color: #222222;
+
 }
 .container  {
   padding: 0;
@@ -29,9 +35,6 @@ li {
   display: block;
   margin: 0;
   padding: 0;
-}
-img {
-    display: block;
 }
 h2 {
   padding-bottom: 15px;
@@ -44,7 +47,8 @@ a:hover {
   font-weight: 500;
   height: 40px;
   border: 0;
-  border-radius: 20px
+  border-radius: 20px;
+  outline: none;
   
 }
 
@@ -172,19 +176,22 @@ margin-right: 20px;
   padding: 120px 0 300px;
   background: #f7fafc;
 }
+.screen-shots img {
+  width: 100%;
+}
 .scrshot-title{
   margin: 0 auto 82px;
   max-width: 670px;
 }
 .nextButton, .prevButton {
-position: relative;
+position: absolute;
 width: 20px;
 border: 1px solid #f0f0f0;
-color: #7777;
+color: #77777;
 border-radius: 50%;
 text-align: center;
 padding: 5px;
-margin-top:calc(15% - 20px);
+margin-top: 10%;
 }
 .nextButton {
  margin-right: -200px;
@@ -302,13 +309,17 @@ margin: 0 auto 82px;
 max-width: 670px;
 }
 .review-item {
-  background: #f7fafc;
   padding: 40px;
+  margin: 0 12.5px;
+  background: #f7fafc;
   cursor: pointer;
+  outline: none;
 }
 .review-item:hover {
-  box-shadow: 0 10px 50px 25px #ececec;
+  box-shadow: 0 0px 20px 10px #ececec;
   background: #fff;
+ 
+
 }
 .review-item__autor-img {
  margin: 0 15px;
@@ -375,6 +386,7 @@ a:hover .download-link__icon .fab {
   background: #000;
   color: #ffffff;
   padding: 60px 0;
+  margin-top: -3px;
 }
 .social-icons__item .fab {
   color: #ffffff;

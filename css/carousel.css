@@ -59,7 +59,7 @@
 /* DIRECTION BUTTON */
 /* _______________________________________________ */
 
-.carousel .nextButton
+/*.carousel .nextButton
 {
 	position :absolute ;
 	right :10px;
@@ -83,13 +83,13 @@
 	z-index :9999;
 }
 
-/* _______________________________________________ */
+/* __/_____________________________________________ */
 
 /* NAVIGATION BUTTON */
 /* _______________________________________________ */
 
 /* buttons container */
-.carousel .buttonNav
+/*.carousel .buttonNav
 {
 	position : relative ;
 	margin :0 auto;
@@ -97,7 +97,7 @@
 }
 
 /* numbers */
-.carousel .buttonNav .numbers 
+/*.carousel .buttonNav .numbers 
 {
 	position :relative ;
 	float :left ;
@@ -124,7 +124,7 @@
 }
 
 /* bullets */
-.carousel .buttonNav .bullet
+/*.carousel .buttonNav .bullet
 {
 	position :relative ;
 	float :left ;
@@ -145,22 +145,22 @@
 {
 	background : url(../images/Bullet-Black.png) no-repeat center ;
 	cursor :default ;
-}
+}*/
 
 /* ____________________________________________________________ */
 
 /* VIDEO */
 /* ____________________________________________________________ */
 
-.carousel .slides .videoOverlay
+/*.carousel .slides .videoOverlay
 {
 	background :url("../images/video.png") no-repeat center; /* play button */
 }
 
-.carousel .slides .spinner
+/*.carousel .slides .spinner
 {
 	background : #000 url("../images/loading.gif") no-repeat center; /* video preloader */
-}
+}*/
 
 /* _____________________________ *
 /* SHADOW */
@@ -210,7 +210,7 @@
 /* ____________________________________________________________ */
 
 /* gradient color for Opera */
-.carousel .gradient
+/*.carousel .gradient
 {
 	background-image :url(../scripts/gradient.svg);
-}
+}*/
