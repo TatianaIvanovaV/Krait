@@ -1,6 +1,7 @@
 @import url("/css/carousel.css");
-@import url("/css/slick.css");
-/*@import url("/css/slick-theme.css");*/
+@import url("/css/owl.carousel.min.css");
+
+
 
 html {
   box-sizing: border-box;
@@ -15,7 +16,8 @@ h1, h2, h3, h4, h5, h6 {
     box-sizing: inherit;
 }
 img {
-  display: block;
+ 
+ 
   
 }
 button:active, button:focus {
@@ -61,9 +63,10 @@ a:hover {
 /* start header styles */
 .header {
   background: linear-gradient(to right, #fd712c, #f31e7a);
-  background-size: 100%;
+  
   color: #ffffff;
  padding: 30px 0;
+ 
 }
 
 .logo__pic {
@@ -117,6 +120,13 @@ margin-right: 20px;
   box-shadow: 0 0 0 5px #e25e2e;
   
 }
+.iphone img {
+  display: block;
+  width: auto;
+  position: absolute;
+  left: 0;
+ 
+}
 /* end header styles */
 
 /* start features styles */
@@ -150,6 +160,9 @@ margin-right: 20px;
 /* end features styles */
 
 /* start dn-leave styles*/
+.dn-leave-iphone img {
+  width: auto;
+}
 .dn-leave-reasons {
   padding: 175px 0;
 }
@@ -179,41 +192,15 @@ margin-right: 20px;
 
 /* start screen-shots styles*/
 .screen-shots {
-  padding: 120px 0 300px;
+  padding: 120px 0 100px;
   background: #f7fafc;
 }
-.screen-shots img {
-  width: 100%;
-}
+
 .scrshot-title{
   margin: 0 auto 82px;
   max-width: 670px;
 }
-.nextButton, .prevButton {
-position: absolute;
-width: 20px;
-border: 1px solid #f0f0f0;
-color: #777;
-border-radius: 50%;
-text-align: center;
-padding: 5px;
-margin-top: 10%;
-}
-.nextButton {
- margin-right: -200px;
- 
-}
-.prevButton {
-  margin-left: -200px;
-}
-.nextButton:hover , .prevButton:hover  {
-  border-color: #dee1e2;
-  box-shadow: 0 0 0 3px #dee1e2;
-    background: linear-gradient(to right, #fd712c, #f31e7a);
-}
-.fa-long-arrow-alt-right .nextButton:hover , .fa-long-arrow-alt-left .prevButton:hover  {
-  color: #fff;
-}
+
 /* end screen-shots styles*/  
 /* start pricing styles*/
 .pricing {
@@ -375,7 +362,7 @@ max-width: 670px;
 }
 .review-item {
   padding: 40px;
-  margin: 0 12.5px;
+  
   background: #f7fafc;
   cursor: pointer;
   outline: none;
