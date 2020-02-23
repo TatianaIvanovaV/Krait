@@ -10,20 +10,32 @@ $(".nav-bar a").click(function(){
 $(document).ready(function(){
 
     $('.carousel').carousel({
-    
-        carouselWidth:930,
-        carouselHeight:330,
         directionNav:true, 
-        shadow:true,
-        buttonNav:'bullets',
-        hAlign:'center', 
-        vAlign:'center',
-        hMargin:0.56, 
-        vMargin:0.4, 
-        frontWidth:350, 
-        frontHeight:600,
+        shadow:false,
+        hMargin:0.55, 
+        vMargin:1, 
+        frontWidth:362, 
+        frontHeight:500,
         slidesPerScroll:7,
         backZoom:0.8, 
+         hAlign:'center', 
+         vAlign:'center',
+        carouselWidth:1140, 
+        carouselHeight:540, 
+        left:0, 
+        right:0, 
+        top:0, 
+        bottom:0,
+        speed:250,
+        autoplay:true, 
+        autoplayInterval:5000, 
+        pauseOnHover:true, 
+        mouse:true, 
+         
+        reflection:false,
+        backOpacity:1,
+        before: function(carousel){}, 
+        after: function(carousel){}
         
     });
     $('.owl-carousel').owlCarousel({

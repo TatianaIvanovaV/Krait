@@ -1,50 +1,47 @@
+
+
+
 .carousel
-{
-	display: flex;
-	justify-content: center;
-	position :relative ;
-	right: 0;
-	border :none;
+{position :relative ;
+	margin :0 auto;
 	
+	height :auto;
+	
+	overflow : visible ;
 	border: 1px solid black;
 }
 
 /* slide container */
 .carousel .slides
 {
-	margin-left: 0;
-	padding-bottom :55%;
-	border: none;
-	list-style: none;
-	position: relative ;
-	overflow: visible ;
+	margin :0;
+	padding :0;
+	border :none;
+	list-style :none;
+	position :relative ;
+	overflow :visible ;
 }
-
 /* slide item */
 .carousel .slides .slideItem 
 {
 	position :absolute ;
-	
-	cursor: pointer ;
-	overflow: hidden;
-	padding: 0;
-	margin: 0;
-	border: none;
+	cursor :pointer ;
+	overflow : hidden;
+	padding :0;
+	margin :0;
+	border :none;
+	box-shadow: 0 10px 50px -5px#a9a9aa;
 }
 
-.carousel .slides .slideItem a
-{
-	display: block ;
-	text-decoration :none;
-	margin :0;
-	padding :0;
-	border :none;
-	outline :none;
-}
 
 .carousel .slides .slideItem img
 {
-	width: 100%;
+	margin :0;
+	padding :0;
+	border :none;
+	width :100%;
+	height :100%;
+	
 }
 
 
@@ -56,17 +53,17 @@
 	border: 1px solid #f0f0f0;
 	border-radius: 50%;
 	text-align: center;
-	padding: 5px 0 0 7px;
-	top: calc(50% - 20px);
 	
+	top: calc(50% - 43px);
+	padding-top: 3px;
 	cursor :pointer ;
 	z-index :9999;
 }
 .carousel .nextButton {
-	right: -7.5%;
+	right: -6.5%;
 }
 .carousel .prevButton {
-	left: -7.5%;
+	left: -6.5%;
 }
 .carousel .nextButton:hover, .carousel .prevButton:hover {
 	border-color: #dee1e2;
@@ -78,14 +75,16 @@
 .carousel .prevButton::before {
 	content: "\f30a";
 	font-family: FontAwesome;
+	font-size: 17px;
 	color: #777;
-	padding-right: 10px;
+	
 }
 .carousel .nextButton::before {
 	content: "\f30b";
 	font-family: FontAwesome;
 	color: #777;
-	padding-right: 10px;
+	font-size: 17px;
+	
 }
 .carousel .prevButton:hover::before, .carousel .nextButton:hover::before {
 	color: white;

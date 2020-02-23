@@ -1,26 +1,13 @@
 @import url("/css/carousel.css");
 @import url("/css/owl.carousel.min.css");
 
-.click-for-video {
-  
-}
- 
-.youtube {
-  width: 640px;
-  height: 480px;
-}
- 
-div.youtube {
-  display: none;
-}
-
 html {
   box-sizing: border-box;
- overflow-x:hidden;
+ /*overflow-x:hidden;*/
  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 34px;
+
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: "Dosis", sans-serif;
@@ -40,7 +27,7 @@ button::-moz-focus-inner {
 body {
   background: #ffffff;
   color: #222222;
-
+  line-height: 34px;
 }
 .container  {
   padding: 0;
@@ -366,9 +353,7 @@ border-top: 1px solid linear-gradient(to right, #fd712c, #f31e7a);
   display: none;
 }
 
-.fullscreen__video {
-  display: none;
-}
+
 /* end video styles*/
 
 /* start reviews styles*/
