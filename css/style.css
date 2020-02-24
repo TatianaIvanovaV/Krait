@@ -3,10 +3,11 @@
 
 html {
   box-sizing: border-box;
- /*overflow-x:hidden;*/
+ overflow-x:hidden;
  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
+  
 
 }
 h1, h2, h3, h4, h5, h6 {
@@ -28,6 +29,7 @@ body {
   background: #ffffff;
   color: #222222;
   line-height: 34px;
+  
 }
 .container  {
   padding: 0;
@@ -47,7 +49,7 @@ a:hover {
 .button {
   background-color: #ffffff;
   font-weight: 600;
-  font-size: 1rem;
+  
   height: 35px;
   border: 0;
   border-radius: 20px;
@@ -57,27 +59,28 @@ a:hover {
 .header {
   background: linear-gradient(to right, #fd712c, #f31e7a);
     color: #ffffff;
- padding: 30px 0;
+ padding: 30px 0 3px;
 }
 
 .logo__pic {
   position: relative;
   height: 45px;
- width: 52px;
+ width: 53px;
   right: 3px;
-  bottom: 4px;
+  top: -2px;
 }
 .logo__title {
   position: relative;
-  left: -1px;
+  left: -2px;
   font-weight:900;
-  font-size: 2.6rem;
+  font-size: 2.63rem;
 }
 .menu__item {
-  margin: 0 0 0 41px;
+  margin: -6px 0 0 42px;
 }
 .text-end {
-  margin-right: -13px;
+  margin-right: -15px;
+  
 }
 .menu__item a {
   color: #ffffff;
@@ -86,37 +89,37 @@ font-weight: 500;
 .download-btn {
  width: 152px;
  margin-top: 2px;
+ padding-right: 1px;
  
 }
 
 .main-title {
-  padding: 112px 0 215px 1px;
+  padding: 114px 0 214px 0;
 }
 .title {
-    max-width: 490px;
+    max-width: 495px;
+    
+  
 }
 .title h1 {
-  
-    font-size: 3.4rem;
-    
-    line-height: 4.5rem;
-    
+  font-size: 3.9em;
+  line-height: 4.3rem;
+  font-weight: ;
+    margin-bottom: 17px;
 }
-.title h1 p {
-  
-}
-.title__benefits {
-   
-}
-.title__benefits li {
-  margin-bottom: 10px;
-  font-weight: 500;
+.title p {
+  line-height: 1.95rem;
+  margin-bottom: 6px;
+
 }
 .title__benefits li i{
 margin-right: 20px;
 }
 .explording-btn {
+  margin: 36px 0 0 2px;
     width: 195px;
+    font-weight: 600;
+    height: 42px;
 }
 .explording-btn:hover,
 .download-btn:hover {
@@ -124,11 +127,11 @@ margin-right: 20px;
   
 }
 .iphone img {
-  display: block;
+  
   width: auto;
   position: absolute;
   left: 0;
- 
+ top: -62px;
 }
 /* end header styles */
 
@@ -140,7 +143,7 @@ margin-right: 20px;
 .offer {
     display: flex;
     justify-content: flex-start;
-    padding: 0 0 60px 0;
+    margin-bottom: 25px;
 }
 .offer__icon {
     display: flex;
@@ -154,11 +157,15 @@ margin-right: 20px;
 }
 .offer__titie {
   width: 80%; 
-  padding: 0 0 0 22px;
+  padding: 0 0 0 25px;
+
 }
-.offer__titie h4 {
-  display: inline-block;
-  margin-top: -10px;
+.offer__titie h3 {
+ font-size: 1.66rem;
+ 
+}
+.offer__titie p {
+
 }
 /* end features styles */
 
@@ -198,23 +205,16 @@ margin-right: 20px;
   padding: 120px 0 100px;
   background: #f7fafc;
 }
-
-.scrshot-title{
-  margin: 0 auto 82px;
-  max-width: 670px;
+.carousel {
+  margin-top: 82px;
 }
-
 /* end screen-shots styles*/  
 /* start pricing styles*/
 .pricing {
 padding: 120px 0 90px;
 }
-.price-title {
-  margin: 0 auto 82px;
-  max-width: 670px;
-}
 .tariff {
-  margin-bottom: 30px;
+  margin: 82px 0 30px;
   text-align: center;
   background: #f7fafc;
   cursor: pointer;
@@ -359,10 +359,6 @@ border-top: 1px solid linear-gradient(to right, #fd712c, #f31e7a);
 /* start reviews styles*/
 .reviews {
   padding: 120px 0;
-}
-.review-title {
-margin: 0 auto 82px;
-max-width: 670px;
 }
 .review-item {
   padding: 40px;

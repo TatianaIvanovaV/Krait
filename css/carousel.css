@@ -1,14 +1,10 @@
 
-
-
 .carousel
-{position :relative ;
+{
+	position :relative ;
 	margin :0 auto;
-	
 	height :auto;
-	
-	overflow : visible ;
-	border: 1px solid black;
+	overflow : visible ;	
 }
 
 /* slide container */
@@ -41,7 +37,6 @@
 	border :none;
 	width :100%;
 	height :100%;
-	
 }
 
 
@@ -90,42 +85,4 @@
 	color: white;
 }
 
-/* NAVIGATION BUTTON */
-.carousel .shadow
-{
-	width :100%;
-	height :82px;
-}
-
-.carousel .shadow .shadowLeft
-{
-	background : url("../images/shadowLeft.png") no-repeat;
-	width :100px;
-	height :82px;
-	
-	/* fix png problems in ie */
-	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowLeft.png, sizingmethod=scale)"; /* IE8 */   
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowLeft.png, sizingmethod=scale);   /* IE6 & 7 */                     
-}
-
-.carousel .shadow .shadowMiddle
-{
-	height :82px;
-	background:url("../images/shadowTile.png") repeat-x;
-	
-	/* fix png problems in ie */
-	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowTile.png, sizingmethod=scale)"; /* IE8 */   
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowTile.png, sizingmethod=scale);   /* IE6 & 7 */                     
-}
-
-.carousel .shadow .shadowRight
-{
-	width :100px;
-	height :82px;
-	background:url("../images/shadowRight.png") no-repeat;
-	
-	/* fix png problems in ie */
-	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowRight.png, sizingmethod=scale)"; /* IE8 */   
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowRight.png, sizingmethod=scale);   /* IE6 & 7 */                     
-}
 
