@@ -13,7 +13,7 @@ $(document).ready(function(){
         directionNav:true, 
         shadow:false,
         hMargin:0.55, 
-        vMargin:1, 
+        vMargin:0.5, 
         frontWidth:362, 
         frontHeight:500,
         slidesPerScroll:7,
@@ -46,16 +46,18 @@ $(document).ready(function(){
         responsive:{
             0:{
                 items:1,
-                nav:true
+                nav:true,
+                loop:true
             },
             600:{
                 items:2,
-                nav:false
+                nav:true,
+                loop:true
             },
             1000:{
                 items:3,
                 nav:true,
-                loop:false
+                loop:true
             }
         }
     })

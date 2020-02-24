@@ -55,7 +55,7 @@ overflow: visible;
 	border: 1px solid #f0f0f0;
 	border-radius: 50%;
 	text-align: center;
-	padding: 5px 0 0 7px;
+	padding-top: 3px;
 	top: calc(50% - 20px);
     background-color: #fff;
     cursor :pointer;
@@ -70,13 +70,13 @@ overflow: visible;
 	content: "\f30a";
 	font-family: FontAwesome;
 	color: #777;
-	padding-right: 10px;
+    font-size: 16px;
 }
 .owl-carousel .owl-nav button.owl-next::before {
     content: "\f30b";
 	font-family: FontAwesome;
 	color: #777;
-    padding-right: 10px;
+    font-size: 16px;
    ;
 }
 .owl-carousel .owl-nav button.owl-next:hover ,

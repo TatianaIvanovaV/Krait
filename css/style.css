@@ -4,7 +4,7 @@
 html {
   box-sizing: border-box;
  overflow-x:hidden;
- font-family: "Roboto", sans-serif;
+ font-family: 'Roboto';
   font-size: 14px;
   font-weight: 400;
   
@@ -36,7 +36,7 @@ body {
 }
 ul,
 li {
-  display: block;
+  display: inline-block;
   margin: 0;
   padding: 0;
 }
@@ -48,7 +48,7 @@ a:hover {
 }
 .button {
   background-color: #ffffff;
-  font-weight: 600;
+  
   
   height: 35px;
   border: 0;
@@ -59,52 +59,58 @@ a:hover {
 .header {
   background: linear-gradient(to right, #fd712c, #f31e7a);
     color: #ffffff;
- padding: 30px 0 3px;
+ padding: 30px 0 0;
 }
 
 .logo__pic {
   position: relative;
   height: 45px;
- width: 53px;
-  right: 3px;
-  top: -2px;
+ width: 54px;
+  right: 4px;
+  top: -3px;
 }
 .logo__title {
   position: relative;
-  left: -2px;
-  font-weight:900;
-  font-size: 2.63rem;
+  right: 3px;
+  top: 2px;
+  font-weight:800;
+  font-size: 35px; 
 }
 .menu__item {
-  margin: -6px 0 0 42px;
+ font-weight: 500;
+
 }
-.text-end {
-  margin-right: -15px;
-  
-}
-.menu__item a {
+.menu__item .nav-link {
   color: #ffffff;
-font-weight: 500;
+  margin: -6px 0 0 25px;
+position: relative;
+right: -10px;
+}
+.nav-link-futures {
+  left: 7px;
+}
+.nav-link-pricing {
+  left: 14px;
 }
 .download-btn {
- width: 152px;
- margin-top: 2px;
- padding-right: 1px;
+ width: 153px;
+  margin-top: 2px;
  
-}
+  font-weight: 500;
+ }
 
 .main-title {
-  padding: 114px 0 214px 0;
+  padding: 116px 0 220px 0;
 }
 .title {
-    max-width: 495px;
+    max-width: 500px;
     
   
 }
 .title h1 {
-  font-size: 3.9em;
+  font-size: 3.88em;
   line-height: 4.3rem;
-  font-weight: ;
+  
     margin-bottom: 17px;
 }
 .title p {
@@ -113,13 +119,13 @@ font-weight: 500;
 
 }
 .title__benefits li i{
-margin-right: 20px;
+margin: 0 20px 0 0;
 }
 .explording-btn {
-  margin: 36px 0 0 2px;
-    width: 195px;
+  margin: 32px 0 0 3px;
+    width: 192px;
     font-weight: 600;
-    height: 42px;
+    height: 40px;
 }
 .explording-btn:hover,
 .download-btn:hover {
@@ -130,8 +136,8 @@ margin-right: 20px;
   
   width: auto;
   position: absolute;
-  left: 0;
- top: -62px;
+  left: -4px;
+ top: -64px;
 }
 /* end header styles */
 
@@ -143,7 +149,7 @@ margin-right: 20px;
 .offer {
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
 }
 .offer__icon {
     display: flex;
@@ -154,17 +160,20 @@ margin-right: 20px;
     color: #f31f79;
     border: 1px solid #eeeeee;
     border-radius: 50%;
+    font-size: 25px;
 }
 .offer__titie {
   width: 80%; 
-  padding: 0 0 0 25px;
-
+  padding: 0 0 0 27px;
+margin-top: -5px;
 }
 .offer__titie h3 {
- font-size: 1.66rem;
- 
+  font-size: 23px;
+  
 }
 .offer__titie p {
+  
+  
 
 }
 /* end features styles */
@@ -308,7 +317,7 @@ border-top: 1px solid linear-gradient(to right, #fd712c, #f31e7a);
 }
 @media screen and (max-width: 450px)  {
   .poster{
-    margin: 0;
+    
     height: 100%;
     width: 100%;
     transition: all 0.2s ease-in-out;
@@ -361,21 +370,21 @@ border-top: 1px solid linear-gradient(to right, #fd712c, #f31e7a);
   padding: 120px 0;
 }
 .review-item {
-  padding: 40px;
-  
+  padding: 38px 40px;
   background: #f7fafc;
   cursor: pointer;
   outline: none;
+  line-height: 1.6rem;
 }
 .review-item:hover {
   box-shadow: 0 0px 20px 10px #ececec;
   background: #fff;
 }
 .review-item__autor-img {
- margin: 0 15px;
+ margin: 10px 15px 0;
 }
 .review-item__autor-sign {
- padding-top: 15px;
+ padding-top: 20px;
 }
 .review-item__autor-sign h6 {
   font-size: 1.1rem;
