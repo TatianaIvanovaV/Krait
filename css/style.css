@@ -4,16 +4,8 @@
 html {
   box-sizing: border-box;
  overflow-x:hidden;
- font-family: 'Roboto';
-  font-size: 14px;
-  font-weight: 400;
-  
+}
 
-}
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Dosis", sans-serif;
-  font-weight: 600;
-}
 *,
 *::before,
 *::after {
@@ -27,12 +19,19 @@ button::-moz-focus-inner {
 }
 body {
   background: #ffffff;
-  color: #222222;
+  color: #777;
   line-height: 34px;
-  
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 400;
 }
 .container  {
   padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  color: #222;
 }
 ul,
 li {
@@ -48,20 +47,21 @@ a:hover {
 }
 .button {
   background-color: #ffffff;
-  
-  
   height: 35px;
   border: 0;
   border-radius: 20px;
+  font-weight: 700;
 }
 
 /* start header styles */
 .header {
   background: linear-gradient(to right, #fd712c, #f31e7a);
-    color: #ffffff;
+  color: #ffffff;
  padding: 30px 0 0;
 }
-
+.main-header {
+  margin-bottom: 114px;
+}
 .logo__pic {
   position: relative;
   height: 45px;
@@ -73,67 +73,62 @@ a:hover {
   position: relative;
   right: 3px;
   top: 2px;
-  font-weight:800;
-  font-size: 35px; 
+  font-weight:700;
+  font-size: 36px;
+  color: #ffffff; 
 }
 .menu__item {
- font-weight: 500;
+ margin-right: -16px;
 
 }
 .menu__item .nav-link {
   color: #ffffff;
-  margin: -6px 0 0 25px;
-position: relative;
-right: -10px;
+  margin: -6px 0 0 43px;
 }
-.nav-link-futures {
+.nav-link-home {
+  position: relative;
   left: 7px;
 }
-.nav-link-pricing {
-  left: 14px;
-}
 .download-btn {
- width: 153px;
+  width: 153px;
   margin-top: 2px;
- 
-  font-weight: 500;
- }
-
+  padding-top: 2px;
+}
 .main-title {
-  padding: 116px 0 220px 0;
+ padding-bottom: 220px;
 }
 .title {
     max-width: 500px;
-    
-  
 }
 .title h1 {
-  font-size: 3.88em;
-  line-height: 4.3rem;
-  
-    margin-bottom: 17px;
+  color: #ffffff;
+  font-size: 3.86em;
+  line-height: 60px;
+  margin-bottom: 22px;
 }
 .title p {
-  line-height: 1.95rem;
-  margin-bottom: 6px;
-
+  line-height: 24px;
+font-weight: 300;
+margin-left: -1px;
+margin-bottom: 10px;
 }
-.title__benefits li i{
-margin: 0 20px 0 0;
+.title__benefits li {
+  margin-top: -2px;
+}
+.title__benefits li i{ 
+margin-right: 20px;
 }
 .explording-btn {
-  margin: 32px 0 0 3px;
+  margin: 29px 0 0 3px;
     width: 192px;
-    font-weight: 600;
+    
     height: 40px;
 }
 .explording-btn:hover,
 .download-btn:hover {
-  box-shadow: 0 0 0 5px #e25e2e;
-  
+  box-shadow: 0 0 0 5px #e25e2e; 
 }
 .iphone img {
-  
   width: auto;
   position: absolute;
   left: -4px;
@@ -145,11 +140,13 @@ margin: 0 20px 0 0;
 .features {
   border-bottom: 1px solid #eeeeee;
   padding: 120px 0 60px;
+ 
 }
 .offer {
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 5px;
+    margin-bottom: 39px;
+    
 }
 .offer__icon {
     display: flex;
@@ -164,45 +161,57 @@ margin: 0 20px 0 0;
 }
 .offer__titie {
   width: 80%; 
-  padding: 0 0 0 27px;
+  padding: 0 3px 0 25px;
 margin-top: -5px;
 }
-.offer__titie h3 {
-  font-size: 23px;
-  
+.offer__titie h4 {
+ font-size: 23.6px; 
+  margin-bottom: 15px;
 }
 .offer__titie p {
-  
-  
-
+  font-size: 0.864rem;
+  line-height: 24px;
+ 
 }
 /* end features styles */
 
 /* start dn-leave styles*/
 .dn-leave-iphone img {
   width: auto;
+  
 }
 .dn-leave-reasons {
-  padding: 175px 0;
+  padding: 167px 30px 0 0;
 }
 .dleave-title h2 {
   font-size: 2.2rem;
+  padding-bottom: 13px;
+}
+.dleave-title p {
+  line-height: 24px;
+  font-size: 0.855rem;
 }
 .reasons__item i {
   color: #000;
 }
 .dleave-content {
-  margin-top: 60px;
+  margin-top: 68px;
+}
+.dleave-content p {
+  line-height: 24px;
+  font-size: 0.857rem;
+  margin-bottom: 23px;
 }
 .reasons {
-  margin-top: 25px;
-}
-.reasons__item {
-  margin-top: 5px;
+  font-size: 0.867rem;
   font-weight: 500;
 }
-.reasons__item .fas {
+.reasons__item li{
+  
+}
+.reasons__item i {
   margin-right: 20px;
+  
 }
 .dn-leave-iphone {
   margin-right: 125px;
@@ -343,7 +352,7 @@ border-top: 1px solid linear-gradient(to right, #fd712c, #f31e7a);
   position: absolute;
  top: calc(50% - 35px);
  right: 50%;
-  color: white;
+  color: #fff;
   border: 1px solid transparent;
   border-radius: 50%; 
   width: 75px; 
@@ -434,7 +443,7 @@ a:hover .download-link__icon .fab {
   padding: 25px 0 0 20px;
 }
 .download-link__title p {
-  color: #777777;
+  
   padding-top: -10px;
 }
 
