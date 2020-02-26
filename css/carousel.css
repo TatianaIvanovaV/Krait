@@ -49,7 +49,7 @@
 	border-radius: 50%;
 	text-align: center;
 	
-	top: calc(50% - 43px);
+	top: calc(50% - 41px);
 	padding-top: 3px;
 	cursor :pointer ;
 	z-index :9999;
@@ -70,7 +70,7 @@
 .carousel .prevButton::before {
 	content: "\f30a";
 	font-family: FontAwesome;
-	font-size: 17px;
+	font-size: 16px;
 	color: #777;
 	
 }
@@ -78,7 +78,7 @@
 	content: "\f30b";
 	font-family: FontAwesome;
 	color: #777;
-	font-size: 17px;
+	font-size: 16px;
 	
 }
 .carousel .prevButton:hover::before, .carousel .nextButton:hover::before {

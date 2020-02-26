@@ -92,7 +92,7 @@ a:hover {
 .download-btn {
   width: 153px;
   margin-top: 2px;
-  padding-top: 2px;
+  
 }
 .main-title {
  padding-bottom: 220px;
@@ -119,7 +119,7 @@ margin-bottom: 10px;
 margin-right: 20px;
 }
 .explording-btn {
-  margin: 29px 0 0 3px;
+  margin: 31px 0 0 3px;
     width: 192px;
     
     height: 40px;
@@ -145,8 +145,7 @@ margin-right: 20px;
 .offer {
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 39px;
-    
+    margin-bottom: 39px;   
 }
 .offer__icon {
     display: flex;
@@ -166,7 +165,7 @@ margin-top: -5px;
 }
 .offer__titie h4 {
  font-size: 23.6px; 
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 .offer__titie p {
   font-size: 0.864rem;
@@ -176,16 +175,19 @@ margin-top: -5px;
 /* end features styles */
 
 /* start dn-leave styles*/
+.dn-leave-iphone {
+  margin-top: -19px;
+  margin-left: -5px;
+}
 .dn-leave-iphone img {
-  width: auto;
-  
+  width: auto; 
 }
 .dn-leave-reasons {
-  padding: 167px 30px 0 0;
+  padding: 168px 30px 0 0;
 }
 .dleave-title h2 {
   font-size: 2.2rem;
-  padding-bottom: 13px;
+  padding-bottom: 12px;
 }
 .dleave-title p {
   line-height: 24px;
@@ -195,7 +197,7 @@ margin-top: -5px;
   color: #000;
 }
 .dleave-content {
-  margin-top: 68px;
+  margin-top: 69px;
 }
 .dleave-content p {
   line-height: 24px;
@@ -206,12 +208,8 @@ margin-top: -5px;
   font-size: 0.867rem;
   font-weight: 500;
 }
-.reasons__item li{
-  
-}
 .reasons__item i {
   margin-right: 20px;
-  
 }
 .dn-leave-iphone {
   margin-right: 125px;
@@ -220,47 +218,69 @@ margin-top: -5px;
 
 /* start screen-shots styles*/
 .screen-shots {
-  padding: 120px 0 100px;
+  padding: 112px 0 80px;
   background: #f7fafc;
+  
+}
+
+.screen-shots-title h2 {
+  font-size: 2.2rem;
+  margin-bottom: 5px;
+}
+.screen-shots-title p {
+  line-height: 24px;
+  padding: 0 40px;
+  font-size: 0.86rem;
 }
 .carousel {
-  margin-top: 82px;
+  margin: 60px 0 0 0;
 }
 /* end screen-shots styles*/  
 /* start pricing styles*/
 .pricing {
-padding: 120px 0 90px;
+padding: 112px 0 90px;
+}.price-title h2{
+  font-size: 2.2rem;
+  margin-bottom: 5px;
+}
+.price-title p {
+  line-height: 24px;
+  padding: 0 40px;
+  font-size: 0.86rem;
 }
 .tariff {
-  margin: 82px 0 30px;
+  margin: 60px 0 30px;
   text-align: center;
   background: #f7fafc;
   cursor: pointer;
-  
+  padding-bottom: 40px;
 }
 .tariff__title {
-  padding-top: 10px;
+  padding: 12px 0 8px 7px;
+  font-size: 1.235rem;
+  
 }
 .tariff__price {
-  padding: 20px 0 0;
+  padding: 19px 0 0 11px;
   background: #fff;
-  
+ 
   
   }
 .tariff__price h1 {
-  font-size: 2.8rem;
+  font-size: 2.947rem;
 }
 .tariff__price-upr,
 .tariff__price-but {
   position: relative; 
-    top: 5px;   
+    top: 6px;   
 }
 .tariff__price-but { 
-  top: 23px;
+  top: 27px;
+  right: 2px;
 }
 .tariff__price-upr h6,
 .tariff__price-but h6 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 .triangle {
   width: 100%;
@@ -270,12 +290,13 @@ padding: 120px 0 90px;
   clip-path: polygon(0 0,0 5%, 50% 100%, 100% 5%,100% 0);
 }
 .tariff__benefits {
-  padding-top: 30px;
+  padding: 27px 0 0 8px;
  }
 .tariff__benefits li {
   width: 75%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: -5px;
 border-bottom: 1px dashed #eeeeee;  
 }
 .tariff__benefits li:last-child {
@@ -283,20 +304,24 @@ border-bottom: 1px dashed #eeeeee;
 }
 .tariff__trial {
  color: #b0b0b0;
+ margin:30px 0 3px;
+ padding-left: 7px;
 }
 .buy-btn {
   border: 1px solid #eeeeee;
   width: 140px;
-  margin-bottom: 40px;
+  height: 40px;
+  margin-left: 7px;
 }
-
 .tariff:hover {
-  box-shadow: 0 0 20px 4px#e5e5e5;
-  
+  box-shadow: 0 0 20px 4px#e5e5e5; 
 }
 .tariff:hover .buy-btn{
   border: 1px solid #e5e5e5;
   box-shadow: 0 0 0 3px #e5e5e5;
+}
+.tariff:hover .tariff__price h1, .tariff:hover .tariff__price h6  {
+  color: #fff;
 }
 .tariff:hover .tariff__price,
 .tariff:hover .triangle,
@@ -345,13 +370,13 @@ border-top: 1px solid linear-gradient(to right, #fd712c, #f31e7a);
   opacity:1;
 }
 .poster-wrap:hover .poster{
-  transform: scale(1.6, 1.6);
+  transform: scale(1.7, 1.7);
   opacity: 0.5;
  }
 .stripes{
   position: absolute;
- top: calc(50% - 35px);
- right: 50%;
+ top: calc(50% - 36px);
+ right: calc(50% - 37px);
   color: #fff;
   border: 1px solid transparent;
   border-radius: 50%; 
@@ -362,42 +387,54 @@ border-top: 1px solid linear-gradient(to right, #fd712c, #f31e7a);
 }
 .stripes img {
   position: absolute;
-  width: 50%;
-  top: 15px;
-  left: 17.5px;
-  
+  width: 40%;
+  top: 23px;
+  left: 26px; 
 }
 .stripes:active  {
   display: none;
 }
 
-
 /* end video styles*/
 
 /* start reviews styles*/
 .reviews {
-  padding: 120px 0;
+  padding: 113px 0 120px;
+}
+.review-title h2{
+  font-size: 2.2rem;
+  margin-bottom: 5px;
+}
+.review-title p{
+  line-height: 24px;
+  padding: 0 40px;
+  font-size: 0.86rem;
+  margin-bottom: 75px;
 }
 .review-item {
-  padding: 38px 40px;
+  padding: 36px 45px 40px 40px;
   background: #f7fafc;
   cursor: pointer;
   outline: none;
-  line-height: 1.6rem;
+}
+.review-item__content p {
+  font-size: 0.855rem;
+  line-height: 1.56rem;
 }
 .review-item:hover {
   box-shadow: 0 0px 20px 10px #ececec;
   background: #fff;
 }
 .review-item__autor-img {
- margin: 10px 15px 0;
+ margin: 7px 16px 0;
 }
 .review-item__autor-sign {
- padding-top: 20px;
+ padding: 25px 0 0 4px;
+ 
 }
 .review-item__autor-sign h6 {
-  font-size: 1.1rem;
-  margin-bottom: 0;
+  font-size: 1.08rem; 
+  margin-bottom: -2px; 
 }
 
 /* end reviews styles*/
@@ -406,12 +443,12 @@ border-top: 1px solid linear-gradient(to right, #fd712c, #f31e7a);
 /* start download styles*/
 .download {
   background: linear-gradient(to right, #fd712c, #f31e7a);
-  padding: 120px 0 90px;
+  padding: 113px 0 90px;
 }
-
-.download-title {
+ .download-title h2 {
+  font-size: 2.16rem;
   color: #ffffff;
-  margin: 0 auto 82px;
+  margin-bottom: 67px;
  }
 .download-link {
   background: #ffffff;
@@ -422,8 +459,7 @@ border-top: 1px solid linear-gradient(to right, #fd712c, #f31e7a);
  height: 115px;
 }
 a:hover .download-link__icon .fab {
-  background: -webkit-gradient(linear, left top, right top, from(#fd712c), to(#f31e7a));
-  
+  background: linear-gradient(to right, #fd712c, #f31e7a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -434,17 +470,26 @@ a:hover .download-link__icon .fab {
   padding: 30px 30px;
 }
 .download-link__icon .fa-apple {
-  padding-left: 7px;
+  padding-left: 4px;
+  margin-top: -3px;
+}
+.download-link__icon .fa-android {
+  margin-left: -5px;
+}
+.download-link__icon .fa-windows {
+  padding-left: 2px;
+  margin-top: -2px;
 }
 .download-link__icon .fab {
   -webkit-text-stroke: 2px#dee1e2;
+  font-size: 60px;
 }
 .download-link__title {
-  padding: 25px 0 0 20px;
+  padding: 25px 0 0 18px;
 }
-.download-link__title p {
-  
-  padding-top: -10px;
+.download-link__title h3 {
+ font-size: 1.86rem;
+ margin-bottom: -2px;
 }
 
 /* end download styles*/
@@ -453,23 +498,25 @@ a:hover .download-link__icon .fab {
 .footer {
   background: #000;
   color: #ffffff;
-  padding: 60px 0;
-  margin-top: -3px;
-}
+  padding: 55px 0;
+ }
+ .social-icons {
+margin: 0 0 9px -4px;
+ }
 .social-icons__item .fab {
   color: #ffffff;
-  
+  font-size: 17px;
 }
 .social-icons__item {
-  padding: 0 16px 10px;
+  padding: 0 15px 0;
 }
 .fa-facebook-f, .fa-dribbble {
   position: relative;
-  top: -1px;
-  left: -4px;
+  top: -2px;
+  font-size: 15px;
 }
 a:hover .social-icons__item-wrap .fab {
-  background: -webkit-gradient(linear, left top, right top, from(#fd712c), to(#f31e7a));
+  background: linear-gradient(to right, #fd712c, #f31e7a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
