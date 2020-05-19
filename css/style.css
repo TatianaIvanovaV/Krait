@@ -11,12 +11,6 @@ html {
 *::after {
     box-sizing: inherit;
 }
-button:active, button:focus {
-  outline: none;
-}
-button::-moz-focus-inner {
-  border: 0;
-}
 body {
   background: #ffffff;
   color: #777;
@@ -26,7 +20,7 @@ body {
   font-weight: 400;
 }
 .container  {
-  padding: 0;
+  padding: 0px;  
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: "Dosis", sans-serif;
@@ -43,25 +37,31 @@ h2 {
   padding-bottom: 15px;
 }
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 .button {
   background-color: #ffffff;
-  height: 35px;
   border: 0;
   border-radius: 20px;
   font-weight: 700;
+  color: #000;
+  
+  position: relative;
+    display: inline-flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
 }
 
 /* start header styles */
-.header {
+.main-header {
   background: linear-gradient(to right, #fd712c, #f31e7a);
   color: #ffffff;
- padding: 30px 0 0;
+ padding: 30px 0 20px;
 }
-.main-header {
-  margin-bottom: 114px;
-}
+
 .logo__pic {
   position: relative;
   height: 45px;
@@ -91,11 +91,17 @@ a:hover {
 }
 .download-btn {
   width: 153px;
-  margin-top: 2px;
-  
+  height: 35px;
+  margin-top: 2px; 
+  padding-top: 2px;
 }
+/* end header styles */
+
+/* start main-title styles */
 .main-title {
- padding-bottom: 220px;
+  background: linear-gradient(to right, #fd712c, #f31e7a);
+  color: #ffffff;
+ padding: 94px 0 219px;
 }
 .title {
     max-width: 500px;
@@ -118,34 +124,36 @@ margin-bottom: 10px;
 .title__benefits li i{ 
 margin-right: 20px;
 }
-.explording-btn {
-  margin: 31px 0 0 3px;
-    width: 192px;
-    
-    height: 40px;
-}
 .explording-btn:hover,
 .download-btn:hover {
   box-shadow: 0 0 0 5px #e25e2e; 
+  color: #000;
 }
+.explording-btn {
+ width: 191px;
+  height: 40px;
+  margin-top: 29px;
+  margin-left: 4px;
+}
+
 .iphone img {
   width: auto;
   position: absolute;
   left: -4px;
  top: -64px;
 }
-/* end header styles */
+/* end main-title styles */
 
 /* start features styles */
 .features {
-  border-bottom: 1px solid #eeeeee;
-  padding: 120px 0 60px;
+  border-bottom: 2px solid #eeeeee;
+  padding: 120px 0 58px;
  
 }
 .offer {
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 39px;   
+    margin-bottom: 38px;   
 }
 .offer__icon {
     display: flex;
@@ -252,7 +260,7 @@ padding: 112px 0 90px;
   margin: 60px 0 30px;
   text-align: center;
   background: #f7fafc;
-  cursor: pointer;
+  
   padding-bottom: 40px;
 }
 .tariff__title {
@@ -451,13 +459,14 @@ border-top: 1px solid linear-gradient(to right, #fd712c, #f31e7a);
   margin-bottom: 67px;
  }
 .download-link {
+  max-width:;
   background: #ffffff;
   border-radius: 2px;
   color: #222;
   overflow: hidden;
   margin-bottom: 30px;
  height: 115px;
-}
+ }
 a:hover .download-link__icon .fab {
   background: linear-gradient(to right, #fd712c, #f31e7a);
   -webkit-background-clip: text;
@@ -491,7 +500,8 @@ a:hover .download-link__icon .fab {
  font-size: 1.86rem;
  margin-bottom: -2px;
 }
-
+.download-link__title p {
+}
 /* end download styles*/
 
 /* start footer styles*/
