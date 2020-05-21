@@ -6,10 +6,9 @@ $(".nav-bar a").click(function(){
 });
 
 
-
 $(document).ready(function(){
 
-    $('.carousel').carousel({
+   $('.carousel').carousel({
         directionNav:true, 
         shadow:false,
         hMargin:0.55, 

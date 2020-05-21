@@ -4,6 +4,7 @@
 html {
   box-sizing: border-box;
  overflow-x:hidden;
+ font-size: 14px;
 }
 
 *,
@@ -16,7 +17,7 @@ body {
   color: #777;
   line-height: 34px;
   font-family: 'Roboto';
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 400;
 }
 .container  {
@@ -35,6 +36,7 @@ li {
 }
 h2 {
   padding-bottom: 15px;
+  
 }
 a:hover {
   text-decoration: none;
@@ -45,7 +47,6 @@ a:hover {
   border-radius: 20px;
   font-weight: 700;
   color: #000;
-  
   position: relative;
     display: inline-flex;
     box-sizing: border-box;
@@ -73,8 +74,8 @@ a:hover {
   position: relative;
   right: 3px;
   top: 2px;
-  font-weight:700;
-  font-size: 36px;
+  font-weight: 800;
+  font-size: 2.5rem;
   color: #ffffff; 
 }
 .menu__item {
@@ -101,14 +102,14 @@ a:hover {
 .main-title {
   background: linear-gradient(to right, #fd712c, #f31e7a);
   color: #ffffff;
- padding: 94px 0 219px;
+ padding: 96px 0 219px;
 }
 .title {
     max-width: 500px;
 }
 .title h1 {
   color: #ffffff;
-  font-size: 3.86em;
+  font-size: 3.857rem;
   line-height: 60px;
   margin-bottom: 22px;
 }
@@ -147,13 +148,13 @@ margin-right: 20px;
 /* start features styles */
 .features {
   border-bottom: 2px solid #eeeeee;
-  padding: 120px 0 58px;
+  padding: 120px 0 60px;
  
 }
 .offer {
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 38px;   
+    margin-bottom: 40px;   
 }
 .offer__icon {
     display: flex;
@@ -164,7 +165,7 @@ margin-right: 20px;
     color: #f31f79;
     border: 1px solid #eeeeee;
     border-radius: 50%;
-    font-size: 25px;
+    font-size: 1.8rem;
 }
 .offer__titie {
   width: 80%; 
@@ -172,11 +173,11 @@ margin-right: 20px;
 margin-top: -5px;
 }
 .offer__titie h4 {
- font-size: 23.6px; 
+ font-size: 1.67rem; 
   margin-bottom: 16px;
 }
 .offer__titie p {
-  font-size: 0.864rem;
+  font-size: 0.985rem;
   line-height: 24px;
  
 }
@@ -196,12 +197,12 @@ margin-top: -5px;
  margin: 168px 0 120px;
 }
 .dleave-title h2 {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   padding-bottom: 12px;
 }
 .dleave-title p {
   line-height: 24px;
-  font-size: 0.855rem;
+  font-size: 0.98rem;
 }
 .reasons__item i {
   color: #000;
@@ -211,15 +212,16 @@ margin-top: -5px;
 }
 .dleave-content p {
   line-height: 24px;
-  font-size: 0.857rem;
+  font-size: 0.98rem;
   margin-bottom: 23px;
 }
 .reasons {
-  font-size: 0.867rem;
+  font-size: 0.99rem;
   font-weight: 500;
 }
 .reasons__item i {
   margin-right: 20px;
+  font-size: 1rem;
 }
 
 /* end dn-leave styles*/
@@ -227,18 +229,17 @@ margin-top: -5px;
 /* start screen-shots styles*/
 .screen-shots {
   padding: 112px 0 80px;
-  background: #f7fafc;
-  
+  background: #f7fafc; 
 }
 
 .screen-shots-title h2 {
-  font-size: 2.2rem;
+  font-size: 2.521rem;
   margin-bottom: 5px;
 }
 .screen-shots-title p {
   line-height: 24px;
   padding: 0 40px;
-  font-size: 0.86rem;
+  font-size: 0.98rem;
 }
 .carousel {
   margin: 60px 0 0 0;
@@ -247,48 +248,49 @@ margin-top: -5px;
 /* start pricing styles*/
 .pricing {
 padding: 112px 0 90px;
-}.price-title h2{
-  font-size: 2.2rem;
+}
+.price-title h2{
+  font-size: 2.521rem;
   margin-bottom: 5px;
 }
 .price-title p {
   line-height: 24px;
   padding: 0 40px;
-  font-size: 0.86rem;
+  font-size: 0.98rem;
 }
 .tariff {
-  margin: 60px 0 30px;
+  margin: 62px 0 30px;
   text-align: center;
   background: #f7fafc;
-  
   padding-bottom: 40px;
 }
 .tariff__title {
-  padding: 12px 0 8px 7px;
-  font-size: 1.235rem;
+  padding: 12px 0 8px 6px;
+  font-size: 1.395rem;
   
 }
 .tariff__price {
-  padding: 19px 0 0 11px;
+  padding: 20px 0 15px 11px;
   background: #fff;
- 
-  
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
   }
-.tariff__price h1 {
-  font-size: 2.947rem;
-}
+
 .tariff__price-upr,
 .tariff__price-but {
   position: relative; 
     top: 6px;   
 }
 .tariff__price-but { 
-  top: 27px;
+  top: 0px;
   right: 2px;
 }
-.tariff__price-upr h6,
-.tariff__price-but h6 {
+.tariff__price-upr,
+.tariff__price-but  {
   font-size: 1.2rem;
+}
+.tariff__price-coast {
+  font-size: 3.4rem;
 }
 .triangle {
   width: 100%;
@@ -381,7 +383,7 @@ border-top: 1px solid linear-gradient(to right, #fd712c, #f31e7a);
   transform: scale(1.7, 1.7);
   opacity: 0.5;
  }
-.stripes{
+.stripes {
   position: absolute;
  top: calc(50% - 36px);
  right: calc(50% - 37px);
@@ -391,16 +393,13 @@ border-top: 1px solid linear-gradient(to right, #fd712c, #f31e7a);
   width: 75px; 
   height: 75px;
   background: linear-gradient(to right, #fd712c, #f31e7a);
-  cursor:pointer;
+  
 }
 .stripes img {
   position: absolute;
   width: 40%;
   top: 23px;
   left: 26px; 
-}
-.stripes:active  {
-  display: none;
 }
 
 /* end video styles*/
