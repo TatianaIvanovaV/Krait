@@ -15,9 +15,9 @@ html {
 body {
   background: #ffffff;
   color: #777;
-  line-height: 34px;
+  line-height: 24px;
   font-family: 'Roboto';
-  font-size: 1rem;
+  font-size: 0.98rem;
   font-weight: 400;
 }
 .container  {
@@ -35,8 +35,9 @@ li {
   padding: 0;
 }
 h2 {
-  padding-bottom: 15px;
-  
+  padding-bottom: 20px;
+  font-size: 2.521rem;
+  margin-bottom: 0px;
 }
 a:hover {
   text-decoration: none;
@@ -78,17 +79,17 @@ a:hover {
   font-size: 2.5rem;
   color: #ffffff; 
 }
-.menu__item {
- margin-right: -16px;
-
+.menu__item a { 
+padding: 6px 0 0;
 }
 .menu__item .nav-link {
   color: #ffffff;
-  margin: -6px 0 0 43px;
 }
-.nav-link-home {
-  position: relative;
-  left: 7px;
+.nav-link-futures {
+  margin-left: 53px;
+}
+.nav-link-pricing {
+  margin-left: 60px;
 }
 .download-btn {
   width: 153px;
@@ -102,25 +103,24 @@ a:hover {
 .main-title {
   background: linear-gradient(to right, #fd712c, #f31e7a);
   color: #ffffff;
- padding: 96px 0 219px;
+ padding: 98px 0 219px;
 }
 .title {
     max-width: 500px;
 }
 .title h1 {
   color: #ffffff;
-  font-size: 3.857rem;
+  font-size: 3.867rem;
   line-height: 60px;
   margin-bottom: 22px;
 }
 .title p {
-  line-height: 24px;
-font-weight: 300;
 margin-left: -1px;
-margin-bottom: 10px;
+margin-bottom: 14px;
 }
 .title__benefits li {
-  margin-top: -2px;
+  font-size: 1rem;
+  margin-bottom: 9px;
 }
 .title__benefits li i{ 
 margin-right: 20px;
@@ -133,7 +133,7 @@ margin-right: 20px;
 .explording-btn {
  width: 191px;
   height: 40px;
-  margin-top: 29px;
+  margin-top: 25px;
   margin-left: 4px;
 }
 
@@ -177,9 +177,7 @@ margin-top: -5px;
   margin-bottom: 16px;
 }
 .offer__titie p {
-  font-size: 0.985rem;
-  line-height: 24px;
- 
+  font-size: 0.987rem;
 }
 /* end features styles */
 
@@ -196,14 +194,6 @@ margin-top: -5px;
   padding-right: 30px;
  margin: 168px 0 120px;
 }
-.dleave-title h2 {
-  font-size: 2.5rem;
-  padding-bottom: 12px;
-}
-.dleave-title p {
-  line-height: 24px;
-  font-size: 0.98rem;
-}
 .reasons__item i {
   color: #000;
 }
@@ -211,9 +201,8 @@ margin-top: -5px;
   margin-top: 69px;
 }
 .dleave-content p {
-  line-height: 24px;
   font-size: 0.98rem;
-  margin-bottom: 23px;
+  margin-bottom: 26px;
 }
 .reasons {
   font-size: 0.99rem;
@@ -223,6 +212,9 @@ margin-top: -5px;
   margin-right: 20px;
   font-size: 1rem;
 }
+.reasons__item {
+margin-bottom: 10px;
+}
 
 /* end dn-leave styles*/
 
@@ -231,32 +223,20 @@ margin-top: -5px;
   padding: 112px 0 80px;
   background: #f7fafc; 
 }
-
-.screen-shots-title h2 {
-  font-size: 2.521rem;
-  margin-bottom: 5px;
-}
 .screen-shots-title p {
-  line-height: 24px;
   padding: 0 40px;
-  font-size: 0.98rem;
 }
 .carousel {
   margin: 60px 0 0 0;
 }
 /* end screen-shots styles*/  
+
 /* start pricing styles*/
 .pricing {
 padding: 112px 0 90px;
 }
-.price-title h2{
-  font-size: 2.521rem;
-  margin-bottom: 5px;
-}
 .price-title p {
-  line-height: 24px;
   padding: 0 40px;
-  font-size: 0.98rem;
 }
 .tariff {
   margin: 62px 0 30px;
@@ -266,31 +246,27 @@ padding: 112px 0 90px;
 }
 .tariff__title {
   padding: 12px 0 8px 6px;
-  font-size: 1.395rem;
-  
+  font-size: 1.395rem; 
 }
 .tariff__price {
-  padding: 20px 0 15px 11px;
+  padding: 35px 0 22px 9px;
   background: #fff;
   font-family: "Dosis", sans-serif;
   font-weight: 600;
-  }
-
+  color: black;
+}
 .tariff__price-upr,
 .tariff__price-but {
   position: relative; 
-    top: 6px;   
+  bottom: 9px;
+  font-size: 1.25rem;   
 }
 .tariff__price-but { 
-  top: 0px;
-  right: 2px;
-}
-.tariff__price-upr,
-.tariff__price-but  {
-  font-size: 1.2rem;
+  top: 12px;
+  right: 0px;
 }
 .tariff__price-coast {
-  font-size: 3.4rem;
+  font-size: 3.42rem;
 }
 .triangle {
   width: 100%;
@@ -300,13 +276,14 @@ padding: 112px 0 90px;
   clip-path: polygon(0 0,0 5%, 50% 100%, 100% 5%,100% 0);
 }
 .tariff__benefits {
-  padding: 27px 0 0 8px;
+  padding: 29px 0 0 8px;
+
  }
 .tariff__benefits li {
+  line-height: 33px;
   width: 75%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: -5px;
 border-bottom: 1px dashed #eeeeee;  
 }
 .tariff__benefits li:last-child {
@@ -314,14 +291,15 @@ border-bottom: 1px dashed #eeeeee;
 }
 .tariff__trial {
  color: #b0b0b0;
- margin:30px 0 3px;
+ margin: 36px 0 8px;
  padding-left: 7px;
 }
 .buy-btn {
   border: 1px solid #eeeeee;
   width: 140px;
   height: 40px;
-  margin-left: 7px;
+  margin-left: 9px;
+  padding-bottom: 5px;
 }
 .tariff:hover {
   box-shadow: 0 0 20px 4px#e5e5e5; 
@@ -359,14 +337,7 @@ border-top: 1px solid linear-gradient(to right, #fd712c, #f31e7a);
   transition: all 0.2s ease-in-out;
   
 }
-@media screen and (max-width: 450px)  {
-  .poster{
-    
-    height: 100%;
-    width: 100%;
-    transition: all 0.2s ease-in-out;
-  }
-  }
+
 .blackout{
   position:absolute;
   background:#000;
@@ -385,7 +356,7 @@ border-top: 1px solid linear-gradient(to right, #fd712c, #f31e7a);
  }
 .stripes {
   position: absolute;
- top: calc(50% - 36px);
+ top: calc(50% - 37px);
  right: calc(50% - 37px);
   color: #fff;
   border: 1px solid transparent;
@@ -406,16 +377,11 @@ border-top: 1px solid linear-gradient(to right, #fd712c, #f31e7a);
 
 /* start reviews styles*/
 .reviews {
-  padding: 113px 0 120px;
-}
-.review-title h2{
-  font-size: 2.2rem;
-  margin-bottom: 5px;
+  padding: 110px 0 120px;
 }
 .review-title p{
   line-height: 24px;
   padding: 0 40px;
-  font-size: 0.86rem;
   margin-bottom: 75px;
 }
 .review-item {
@@ -424,41 +390,33 @@ border-top: 1px solid linear-gradient(to right, #fd712c, #f31e7a);
   cursor: pointer;
   outline: none;
 }
-.review-item__content p {
-  font-size: 0.855rem;
-  line-height: 1.56rem;
-}
 .review-item:hover {
   box-shadow: 0 0px 20px 10px #ececec;
   background: #fff;
 }
 .review-item__autor-img {
- margin: 7px 16px 0;
+ margin: 8px 15px 0;
 }
 .review-item__autor-sign {
- padding: 25px 0 0 4px;
- 
-}
-.review-item__autor-sign h6 {
-  font-size: 1.08rem; 
-  margin-bottom: -2px; 
-}
-
-/* end reviews styles*/
+ padding: 25px 0 0 5px;
+ }
+ .review-item__autor-sign h5 {
+   margin-bottom: 2px;
+ }
+ /* end reviews styles*/
 
 
 /* start download styles*/
 .download {
   background: linear-gradient(to right, #fd712c, #f31e7a);
-  padding: 113px 0 90px;
+  padding: 112px 0 90px;
 }
  .download-title h2 {
-  font-size: 2.16rem;
+   margin-bottom: 63px;
+  font-weight: 500;
   color: #ffffff;
-  margin-bottom: 67px;
  }
-.download-link {
-  max-width:;
+ .download-link {
   background: #ffffff;
   border-radius: 2px;
   color: #222;
@@ -496,10 +454,12 @@ a:hover .download-link__icon .fab {
   padding: 25px 0 0 18px;
 }
 .download-link__title h3 {
- font-size: 1.86rem;
- margin-bottom: -2px;
+ font-size: 2.1rem;
+ font-weight: 700;
+ margin-bottom: 3px;
 }
 .download-link__title p {
+  font-size: 0.99rem;
 }
 /* end download styles*/
 
@@ -507,10 +467,7 @@ a:hover .download-link__icon .fab {
 .footer {
   background: #000;
   color: #ffffff;
-  padding: 55px 0;
- }
- .social-icons {
-margin: 0 0 9px -4px;
+  padding: 60px 0;
  }
 .social-icons__item .fab {
   color: #ffffff;
@@ -528,4 +485,33 @@ a:hover .social-icons__item-wrap .fab {
   background: linear-gradient(to right, #fd712c, #f31e7a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.copyright {
+  margin-top: 18px;
+}
+@media screen and (max-width: 992px){
+  
+}
+@media screen and (max-width: 615px)  {
+  .poster{
+    
+    height: 100%;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+  }
+  }
+  @media screen and (max-width: 576px)  {
+.tariff{
+  max-width: 380px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.download-ancor {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.nav-link-futures, 
+.nav-link-pricing {
+  margin-left: 15px;
+}
 }
