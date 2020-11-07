@@ -48,7 +48,7 @@ $(document).ready(function(){
                 nav:true,
                 loop:true
             },
-            600:{
+            470:{
                 items:2,
                 nav:true,
                 loop:true

@@ -42,6 +42,11 @@ h2 {
 a:hover {
   text-decoration: none;
 }
+button:hover,
+button:active,
+button:focus {
+  outline: none;
+}
 .button {
   font-size: 1.01rem;
   background-color: #ffffff;
@@ -50,12 +55,12 @@ a:hover {
   font-weight: 700;
   color: #000;
   position: relative;
-    display: inline-flex;
-    box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
-    vertical-align: middle;
-    text-align: center;
+  display: inline-flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
 }
 
 /* start header styles */
