@@ -1,5 +1,5 @@
-@import url("./css/carousel.css");
-@import url("./css/owl.carousel.min.css");
+@import url("carousel.css");
+@import url("owl.carousel.min.css");
 
 html {
   box-sizing: border-box;
