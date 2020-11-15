@@ -1,5 +1,5 @@
-@import url("carousel.css");
-@import url("owl.carousel.min.css");
+/*@import url("carousel.css");
+@import url("owl.carousel.min.css");*/
 
 html {
   box-sizing: border-box;
@@ -388,27 +388,77 @@ border-top: 1px solid linear-gradient(to right, #fd712c, #f31e7a);
 .review-title p{
   line-height: 24px;
   padding: 0 40px;
-  margin-bottom: 75px;
+  margin-bottom: 55px;
 }
-.review-item {
-  padding: 36px 45px 40px 40px;
+.reviews__item {
+  padding: 36px 45px 0 40px;
   background: #f7fafc;
   cursor: pointer;
   outline: none;
+  min-height: 240px !important;
 }
-.review-item:hover {
-  box-shadow: 0 0px 20px 10px #ececec;
+.reviews__item:hover {
+  box-shadow: 0 0px 15px 6px #ececec;
   background: #fff;
 }
-.review-item__autor-img {
- margin: 8px 15px 0;
+.reviews__autor {
+  margin-top: 22px;
 }
-.review-item__autor-sign {
- padding: 25px 0 0 5px;
+.reviews__autor-img {
+  float: left;
+  margin-right: 20px;
+}
+.reviews__autor-sign {
+  padding-top: 18px;
+}
+.reviews__autor-sign h5 {
+  margin-bottom: 2px;
+}
+.slick-slide {
+  margin: 0 15px;
+}
+.slick-list {
+  margin: 0 -15px !important;
+  box-sizing: initial !important;
+  padding: 20px 0px !important;
+}
+.slick-arrow {
+  position: absolute;
+  top: 44%;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid #eeeeee;
+}
+.slick-arrow:hover {
+  border-color: #dee1e2;
+  box-shadow: 0 0 0 3px #dee1e2;
+  background: linear-gradient(to right, #fd712c, #f31e7a);
  }
- .review-item__autor-sign h5 {
-   margin-bottom: 2px;
- }
+.arrow-left {
+  left: -7.9%;
+}
+.arrow-right {
+  right: -7.9%;
+}
+.arrow-left::before, .arrow-right::before {
+  font-family: FontAwesome;
+  color: #777;
+  font-size: 16px;
+  position: relative;
+  top: 9px;
+  left: 12px
+}
+.slick-arrow:hover.arrow-left::before,
+.slick-arrow:hover.arrow-right::before {
+  color: white;
+}
+.arrow-left::before {
+  content: "\f30a";
+}
+.arrow-right::before {
+  content: "\f30b";
+}
  /* end reviews styles*/
 
 

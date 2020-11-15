@@ -1,3 +1,4 @@
+
 $(".nav-bar a").click(function(){
     $("body,html").animate({
     scrollTop:$("#" + $(this).data('value')).offset().top
@@ -5,10 +6,9 @@ $(".nav-bar a").click(function(){
     
 });
 
-
 $(document).ready(function(){
 
-   $('.carousel').carousel({
+  /* $('.carousel').carousel({
         directionNav:true, 
         shadow:false,
         hMargin:0.55, 
@@ -36,8 +36,9 @@ $(document).ready(function(){
         before: function(carousel){}, 
         after: function(carousel){}
         
-    });
-    $('.owl-carousel').owlCarousel({
+    });*/
+
+    /*$('.owl-carousel').owlCarousel({
         loop:true,
         margin:30,
         stagePadding:30,
@@ -59,10 +60,43 @@ $(document).ready(function(){
                 loop:true
             }
         }
-    })
+    })*/
+
+    $('.reviews__carousel').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow:`<div class="arrow-left"></div>`,
+        nextArrow:`<div class="arrow-right"></div>`,
+        responsive: [
+          {
+            breakpoint: 1140,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll:1,
+              infinite: true,
+            }
+          },
+          {
+            breakpoint: 900,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 500,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]// You can unslick at a given breakpoint now by adding:
+        });// 
 
 
 });
-
  
 
