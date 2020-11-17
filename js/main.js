@@ -1,5 +1,5 @@
 
-$(".nav-bar a").click(function(){
+$(".main__nav-bar a").click(function(){
     $("body,html").animate({
     scrollTop:$("#" + $(this).data('value')).offset().top
     },1000)
@@ -7,61 +7,6 @@ $(".nav-bar a").click(function(){
 });
 
 $(document).ready(function(){
-
-  /* $('.carousel').carousel({
-        directionNav:true, 
-        shadow:false,
-        hMargin:0.55, 
-        vMargin:0.5, 
-        frontWidth:362, 
-        frontHeight:500,
-        slidesPerScroll:7,
-        backZoom:0.8, 
-         hAlign:'center', 
-         vAlign:'center',
-        carouselWidth:1140, 
-        carouselHeight:540, 
-        left:0, 
-        right:0, 
-        top:0, 
-        bottom:0,
-        speed:250,
-        autoplay:true, 
-        autoplayInterval:5000, 
-        pauseOnHover:true, 
-        mouse:true, 
-         
-        reflection:false,
-        backOpacity:1,
-        before: function(carousel){}, 
-        after: function(carousel){}
-        
-    });*/
-
-    /*$('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:30,
-        stagePadding:30,
-        responsiveClass:true,
-        responsive:{
-            0:{
-                items:2,
-                nav:true,
-                loop:true
-            },
-            470:{
-                items:2,
-                nav:true,
-                loop:true
-            },
-            1000:{
-                items:3,
-                nav:true,
-                loop:true
-            }
-        }
-    })*/
-
     $('.reviews__carousel').slick({
         dots: false,
         infinite: true,
@@ -93,10 +38,34 @@ $(document).ready(function(){
               slidesToScroll: 1
             }
           }
-        ]// You can unslick at a given breakpoint now by adding:
-        });// 
+        ]
+    });
+    
 
-
+    $('.screenshots__carousel').slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      arrows: true,
+      dots: false,
+      centerMode: true,
+      variableWidth: true,
+      waitForAnimate: false,
+      prevArrow:`<div class="arrow-left"></div>`,
+      nextArrow:`<div class="arrow-right"></div>`
+      
+    });
+    
+   
+    var imgs = $('.screenshots__carousel img');
+    imgs.each(function(){
+      var item = $(this).closest('.screenshots__item');
+      item.css({
+        'background-image': 'url(' + $(this).attr('src') + ')', 
+        'background-position': 'center',            
+        '-webkit-background-size': 'cover',
+        'background-size': 'cover', 
+      });
+      $(this).hide();
+    });
 });
- 
 
