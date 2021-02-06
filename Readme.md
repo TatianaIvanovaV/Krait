@@ -1,5 +1,8 @@
-Giant App landing templates
-test-task for Krait
+Landing test-task for Krait
+
+<a href="https://tatianaivanovav.github.io/Krait">Giant App</a>
 
 -bootstrap,
--slick slider/carousel,
+-jQuery,
+-slick slider,
+-slick-slider with perspective effect,
